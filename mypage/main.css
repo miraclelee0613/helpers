@@ -1,3 +1,7 @@
+*{
+    word-break: break-word;
+}
+
 body {
     margin: 0;
     font-family: Noto Sans KR,Malgun Gothic,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -7,6 +11,53 @@ body {
     color: #323232;
     text-align: left;
     background-color: #fff;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
+    display:block;
+}
+
+div{
+    display: block;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a{
+    color: #323232;
+    background-color: transparent;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+}
+
+address dl, ol, ul{
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.h3, h3{
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    font-weight: 400;
+    letter-spacing: -.03125rem;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 #app #app-body {
@@ -35,6 +86,7 @@ body {
 }
 
 .profile-container{
+    display: inline-block;
     border-bottom: 0.0625rem solid;
     border-color: #f2f2f2;
     padding: 1rem 0;
@@ -43,6 +95,7 @@ body {
 }
 
 .thumb{
+    display: inline-block;
     width: 4.375rem;
     height: 4.375rem;
     min-width: 4.375rem;
@@ -52,6 +105,7 @@ body {
 }
 
 .user-info{
+    display: inline-block;
     flex: 1;
     overflow: hidden;
     text-align: left;
@@ -92,6 +146,7 @@ body {
 }
 
 .account-setting-btn{
+    display: inline-block;
     border: none;
     border-radius: 12px;
     background-color: #f2f2f2;
@@ -100,4 +155,150 @@ body {
     color: #737373;
     font-weight: 500;
     cursor: pointer;
+}
+
+.underline{
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid;
+    border-color: #f2f2f2;
+}
+
+.main-menu{
+    display:flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #323232;
+}
+
+ul li{
+    list-style: none;
+}
+
+.sub-header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.sub-menu-container{
+    padding: 1rem 0;
+}
+
+.sub-menu-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sub-content{
+    flex: auto;
+    text-align: left;
+}
+
+.sub-menu{
+    display: block;
+}
+
+.sub-menu-title{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #323232;
+    padding: 0;
+}
+
+/* account-info */
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 39.375rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.account-info-title{
+    line-height: 3.125rem;
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    margin: 3rem, 0px;
+}
+
+.profile-image{
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0px auto;
+}
+
+.account-info-section{
+    font-size: 1rem;
+    margin: 3rem 0px 5.125rem;
+}
+
+.account-info{
+    margin-bottom: 3rem;
+}
+
+.item-container{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0px 1rem 0.5rem;
+    border-bottom: 0.0625rem solid rgb(242, 242, 242);
+}
+
+.item{
+    flex: 1 1 0%;
+    color: rgb(50, 50, 50);
+}
+
+.item-title{
+    color: rgb(181, 181, 181);
+}
+
+.item-info{
+    padding-top: 0.25rem;
+}
+
+/* certificate-storage, completed-activityl, issue-certificate, scheduled-activity, user-list */
+
+.my-page-container{
+    max-width: 100%;
+}
+
+.list-container{
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+.title-section{
+    max-width: 60.625rem;
+    margin: 3.125rem auto;
+    padding: 0;
+}
+
+.no-items{
+    margin: 11.25rem 0;
+    text-align: center!important;
+}
+
+.no-items-title{
+    margin-top: 0.75rem;
+    line-height: normal;
+    font-size: 1.125rem;
+    font-weight: 500;
+    white-space: pre-line;
+}
+
+.help-block{
+    white-space: break-spaces;
+    color: #b5b5b5;
 }
