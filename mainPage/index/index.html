@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
 </head>
 <body>
-    <div>
+    <div id="app">
         <header class="header">
             <div class="header-all">
                 <div class="header-left">
@@ -49,7 +49,112 @@
                 </div>
             </div>
         </header> 
-        <main></main>
+        <!-- -------------------main---------------------------------------- -->
+        <main class="main">
+            <div class="main-container">
+                <section class="main-search-word">
+                    <div class="dimmed"></div>
+                    <div class="main-search-word-contents">
+                        <h1 id="welcom-text">
+                            원하는 도움를 요청하고
+                            <br>
+                            도움을 을 받아보세요
+                        </h1>
+                        <div class="main-search-word-searchbar">
+                            <form class="form-searchbar">
+                                <div class="input-group">
+                                    <input type="text" placeholder="어떤 질문?" 
+                                    autocomplete="off" class="input-group-text p2">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="input-group-btn-real">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov…gMCAxIC4xMTQtLjExNHoiLz4KICAgIDwvZz4KPC9zdmc+Cg==
+                                            " alt="" class="search-icon">
+                                            <span class="hidden-xs">도움 검색</span>
+                                        </button>
+                                    </span>
+                                </div>
+    
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-search-local">
+                    <ul class="local_category_buttons list-inline">
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="seoul.png" alt="">
+                                </div>
+                                <p class="local_category_title">수도권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="gang.png" alt="">
+                                </div>
+                                <p class="local_category_title">강원권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="chung.png" alt="">
+                                </div>
+                                <p class="local_category_title">충청권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="bibimbap.png" alt="">
+                                </div>
+                                <p class="local_category_title">호남권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="ulsan.png" alt="">
+                                </div>
+                                <p class="local_category_title">경북권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="busan (2).png" alt="">
+                                </div>
+                                <p class="local_category_title">경남권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="jeju.png" alt="">
+                                </div>
+                                <p class="local_category_title">제주권</p>
+                            </a>
+                        </li>
+                        <li class="local_category_button">
+                            <a href="" class>
+                                <div class="local_category_icon">
+                                    <img src="untact1.png" alt="">
+                                </div>
+                                <p class="local_category_title">비대면</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <section class="main-write">
+                    <section class="main-write-call-help"></section>
+                    <section class="main-write-give-help"></section>
+                </section>
+            </div>
+
+        </main>
+        <!-- -------------------footer---------------------------------------- -->
         <footer class="footer">
             <div class="footer-container">
                     <div class="footer-container-row container">
