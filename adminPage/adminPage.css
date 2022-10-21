@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MaruBuriRegular;
+}
+
+@font-face {
+  font-family: MaruBuriRegular;
+  src: url(font/MaruBuriTTF/MaruBuri-Regular.ttf);
+}
+
+div.totalwrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 65rem;
+  background-color: #f3f6f9;
+}
+
+/* 헤더 */
+div.header {
+  background-color: #1e1e2d;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+  box-shadow: 0px 10px 30px 0px rgb(82 63 105 / 8%);
+  height: 70px;
+  padding: 0;
+}
+
+div.header-main {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 로고와 간편 페이지 이동 */
+div.logo-movepage {
+  margin-left: 20px;
+  display: flex;
+}
+/* 로고 이미지 */
+div.logo-icon img {
+  width: 45px;
+}
+/* 페이지 이동 버튼 */
+div.movepage {
+  margin-left: 50px;
+}
+
+button.movebtn {
+  margin-top: 7px;
+  width: 200px;
+  height: 35px;
+  background-color: #353542;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+button.movebtn:hover .target {
+  filter: brightness(350%);
+  transition: 0.5s;
+}
+
+button.movebtn span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6a6d80;
+  margin-right: 70px;
+}
+
+button.movebtn img {
+  width: 12px;
+  margin-top: 2px;
+}
+
+/* 헤더 카테고리 */
+div.header-category {
+  border: 1px solid white;
+  /* width: 200px; */
+}
+
+div.search-icon {
+  margin: 10px;
+}
+
+div.search-icon img {
+  width: 20px;
+  filter: brightness(350%);
+}
+
+div.body {
+  width: 100%;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+
+/* 사이드 카테고리 헤더 */
+div.side-category {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 260px;
+  height: 75%;
+  position: fixed;
+  top: 120px;
+  left: 50px;
+}
+
+div.side-category-wrap {
+  margin: 15px;
+  border: 1px solid black;
+}
+
+div.side-button {
+  display: flex;
+}
+
+div.side-button img {
+  width: 23px;
+}
+
+div.side-button span {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 1px;
+  font-weight: 700;
+}
+
+div.side-button #godown {
+  width: 14px;
+  height: 12px;
+  margin-left: 110px;
+  margin-top: 6px;
+}
+
+/* 사이드 카테고리 메인 */
+div.side-content {
+  list-style: none;
+}
+
+div.side-content ul {
+  text-align: center;
+  margin: 5px 0;
+}
+
+div.side-content li {
+  list-style: none;
+  margin: 5px;
+  font-weight: 700;
+}
+
+/* 메인 스크린 */
+div.total-screen {
+  border: 1px solid black;
+  width: 75%;
+  height: 100%;
+  position: relative;
+  top: 107px;
+  left: 350px;
+}
+
+div.totla-screen-wrap {
+  display: flex;
+}
+
+div.qs-us {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 질문 게시판 */
+div.question-board {
+  width: 450px;
+  height: 190px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.question-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0 10px;
+}
+
+div.question-title img {
+  width: 30px;
+}
+
+div.question-box {
+  padding: 5px;
+}
+
+div.question-box li {
+  list-style: none;
+  text-align: left;
+  margin: 5px 0;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+
+/* 회원 게시판 */
+div.user-board {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.user-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0 10px;
+}
+
+div.user-title img {
+  width: 30px;
+}
+
+div.user-box img {
+  width: 100%;
+  height: 260px;
+}
+
+/* 재능 기부 게시판 */
+div.talent-board {
+  width: 840px;
+  height: 280px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  left: 320px;
+  cursor: pointer;
+}
+
+div.talent-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0 10px;
+}
+
+div.talent-title img {
+  width: 30px;
+}
+
+div.talent-box {
+}
+
+div.talent-box ul {
+  display: flex;
+}
+
+div.talent-box li {
+  list-style: none;
+  border: 1px solid black;
+}
+
+div.talent-box li img {
+  width: 100px;
+}
+
+/* 수료증 게시판 */
+
+div.cp-ml {
+  display: flex;
+}
+
+div.complete-board {
+  width: 330px;
+  height: 210px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.complete-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0 10px;
+}
+
+div.complete-title img {
+  width: 30px;
+}
+
+div.complete-box {
+  padding: 5px;
+  display: flex;
+}
+
+div.complete-box img {
+  margin-top: 20px;
+  width: 120px;
+}
+
+div.complete-box ul {
+  margin: 15px;
+  margin-top: 50px;
+}
+
+div.complete-box li {
+  list-style: none;
+  text-align: left;
+  margin: 5px 0;
+  font-weight: 700;
+  font-size: 19px;
+  text-align: center;
+}
+
+/* 문의 게시판 */
+div.mail-board {
+  width: 490px;
+  height: 210px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.mail-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 0 10px;
+}
+
+div.mail-title img {
+  width: 30px;
+}
+
+div.mail-box {
+  padding: 5px;
+}
+
+table.mail-timeline {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+td,
+th {
+  border-right: 1px solid gray;
+  text-align: left;
+  margin: 3px;
+  padding: 3px;
+}
