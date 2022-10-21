@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="write.css">
+    <title>도움주기-글쓰기</title>
+</head>
+<body>
+    <main class="write-body">
+        <div class="write-detail">
+            <div class="write-header">
+                <div class="write-header-wrapper">
+                    <select class="custom-select">
+                        <option disabled="disabled" value>지역선택</option>
+                        <option value="capital">수도권</option>
+                        <option value="chungcheong">충청</option>
+                        <option value="gangwon">호남</option>
+                        <option value="gyeongbuk">경북</option>
+                        <option value="gyeongnam">경남</option>
+                        <option value="gangwon">강원</option>
+                        <option value="jeju">제주</option>
+                        <option value="online">온라인</option>
+                    </select>
+                    <span class="write-title">도움주기 페이지</span>
+                    <button class="btn write-submit">등록</button>
+                </div>
+            </div>
+            <div class="attach-file">
+                <div class="attach-file-area">
+                    <div class="add-image-icon"></div>
+                    <div class="custom-file file-input">
+                        <input type="file" name="uploadFile" class="custom-file-input">
+                    </div>
+                    <span class="image-count">사진 수/15</span>
+                </div>
+            </div>
+            <div class="write-body">
+                <div class="write-body-wrapper">
+                    <div class="write-title-wrapper">
+                        <div class="write-title-container">
+                            <label for="post-title-input" class="wrtie-title-label">
+                                <input type="text" placeholder="제목을 입력해주세요." class="write-title-input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="divider-wrapper">
+                        <hr class="hr-divider">
+                    </div>
+                    <div class="write-contents">
+                        <span class="write-contents-text">
+                            <textarea name="write-content" class="write-contents-textarea" placeholder="글 작성에 대한 공지사항">
+                            </textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
