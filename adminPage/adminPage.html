@@ -30,14 +30,30 @@
             <div class="movepage">
               <button class="movebtn">
                 <span class="movebtn-text target">대시 보드</span>
-                <img class="target" src="img/go-down.png" />
+                <img class="godown target" src="img/go-down.png" />
               </button>
+              <ul class="dashul">
+                <li class="dash1">도움 요청</li>
+                <li class="dash2">교육 분야</li>
+                <li class="dash3">회원</li>
+                <li class="dash4">증명서</li>
+                <li class="dash5">문의</li>
+              </ul>
             </div>
           </div>
           <!-- 헤더 카테고리 -->
           <div class="header-category">
             <div class="search-icon">
-              <img src="img/search.png" alt="" />
+              <div class="search-wrap">
+                <input type="text" class="search-input" />
+                <img class="search" src="img/search.png" alt="" />
+              </div>
+              <div class="profile">
+                <ul>
+                  <li>문미새</li>
+                </ul>
+                <img src="img/moon.jpg" />
+              </div>
             </div>
           </div>
         </div>
@@ -49,20 +65,22 @@
         <div class="side-category">
           <div class="side-category-wrap">
             <!-- 사이드 카테고리 헤더 -->
-            <div class="side-button">
-              <img src="img/menu.png" />
-              <span>대시 보드</span>
-              <img id="godown" src="img/go-down.png" />
-            </div>
-            <!-- 사이드 카테고리 메인 -->
-            <div class="side-content">
-              <ul>
-                <li>질문</li>
-                <li>재능기부</li>
-                <li>수료증</li>
-                <li>문의</li>
-                <li>회원</li>
-              </ul>
+            <div class="side-option-wrap">
+              <div class="side-button">
+                <img src="img/menu.png" />
+                <span class="dashboardhb">대시 보드</span>
+                <img id="godown" src="img/go-down.png" />
+              </div>
+              <!-- 사이드 카테고리 메인 -->
+              <div class="side-content">
+                <ul>
+                  <li class="ds1">도움 요청</li>
+                  <li class="ds2">교육 분야</li>
+                  <li class="ds3">회원</li>
+                  <li class="ds4">증명서</li>
+                  <li class="ds5">문의</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +92,7 @@
               <!-- 질문 게시판 -->
               <div class="question-board">
                 <div class="question-title">
-                  <h2>도움 요청</h2>
+                  <h2 class="questionhb">도움 요청</h2>
                   <img src="img/list.png" alt="" />
                 </div>
                 <div class="question-box">
@@ -91,7 +109,7 @@
               <!-- 회원 게시판 -->
               <div class="user-board">
                 <div class="user-title">
-                  <h2>회원</h2>
+                  <h2 class="userhb">회원</h2>
                   <img src="img/list.png" alt="" />
                 </div>
                 <div class="user-box">
@@ -102,39 +120,59 @@
             </div>
 
             <div class="tl-cp-ml">
-              <!-- 재능 기부 게시판 -->
+              <!-- 교육 분야 게시판 -->
               <div class="talent-board">
                 <div class="talent-title">
-                  <h2>교육 분야</h2>
+                  <h2 class="talenthb">교육 분야</h2>
                   <img src="img/list.png" alt="" />
                 </div>
                 <div class="talent-box">
-                  <ul>
-                    <li>
-                      <img src="img/computer.png" />
-                      <span>컴퓨터 교육</span>
-                    </li>
-                    <li>
-                      <img src="img/scanner.png" />
-                      <span>가전제품 교육</span>
-                    </li>
-                    <li>
-                      <img src="img/calculator.png" />
-                      <span>수학 교육</span>
-                    </li>
-                    <li>
-                      <img src="" />
-                      <span></span>
-                    </li>
-                  </ul>
+                  <table class="talent-list">
+                    <tr>
+                      <td>
+                        <img src="img/computer.png" />
+                        <span>컴퓨터 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/scanner.png" />
+                        <span>가전제품 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/calculator.png" />
+                        <span>수학 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/electric-safty.png" />
+                        <span>안전 교육</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="img/computer.png" />
+                        <span>컴퓨터 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/scanner.png" />
+                        <span>가전제품 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/calculator.png" />
+                        <span>수학 교육</span>
+                      </td>
+                      <td>
+                        <img src="img/electric-safty.png" />
+                        <span>안전 교육</span>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
-              <!-- 재능 기부 게시판 끝 -->
+              <!-- 교육 분야 게시판 끝 -->
               <div class="cp-ml">
-                <!-- 수료증 게시판 -->
+                <!-- 증명서 게시판 -->
                 <div class="complete-board">
                   <div class="complete-title">
-                    <h2>증명서</h2>
+                    <h2 class="completehb">증명서</h2>
                     <img src="img/list.png" alt="" />
                   </div>
                   <div class="complete-box">
@@ -145,11 +183,11 @@
                     </ul>
                   </div>
                 </div>
-                <!-- 수료증 게시판 끝 -->
+                <!-- 증명서 게시판 끝 -->
                 <!-- 문의 게시판 -->
                 <div class="mail-board">
                   <div class="mail-title">
-                    <h2>문의</h2>
+                    <h2 class="mailhb">문의</h2>
                     <img src="img/list.png" alt="" />
                   </div>
                   <div class="mail-box">
@@ -186,4 +224,23 @@
       </div>
     </div>
   </body>
+  <script src="adminPage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>
+    let $movebtn = $(".movebtn");
+    let $dashul = $(".dashul");
+    let $searchbtn = $(".search");
+    let $searchinput = $(".search-input");
+
+    $(".dashul").hide();
+    $(".search-input").hide();
+
+    $movebtn.on("click", function () {
+      $dashul.slideToggle();
+    });
+
+    $searchbtn.on("click", function () {
+      $searchinput.fadeToggle();
+    });
+  </script>
 </html>
