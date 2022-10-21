@@ -14,6 +14,7 @@ div.totalwrapper {
   width: 100%;
   height: 100%;
   min-height: 65rem;
+  /* background-color: #f3f6f9; */
   background-color: #f3f6f9;
 }
 
@@ -25,7 +26,7 @@ div.header {
   right: 0;
   left: 0;
   z-index: 97;
-  box-shadow: 0px 10px 30px 0px rgb(82 63 105 / 8%);
+  box-shadow: 1px 1px 10px 3px grey;
   height: 70px;
   padding: 0;
 }
@@ -77,19 +78,101 @@ button.movebtn img {
   margin-top: 2px;
 }
 
-/* 헤더 카테고리 */
-div.header-category {
-  border: 1px solid white;
-  /* width: 200px; */
+ul.dashul {
+  list-style: none;
+  background-color: #353542;
+  width: 200px;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+  margin-top: -13px;
+  color: #6a6d80;
+  padding: 10px;
 }
+
+ul.dashul li {
+  margin: 10px;
+  /* margin-left: 30px; */
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+li.dash1:hover {
+  filter: brightness(350%);
+  font-size: 17px;
+  transition: 0.3s;
+}
+li.dash2:hover {
+  filter: brightness(350%);
+  font-size: 17px;
+  transition: 0.3s;
+}
+li.dash3:hover {
+  filter: brightness(350%);
+  font-size: 17px;
+  transition: 0.3s;
+}
+li.dash4:hover {
+  filter: brightness(350%);
+  font-size: 17px;
+  transition: 0.3s;
+}
+li.dash5:hover {
+  filter: brightness(350%);
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+/* 헤더 카테고리 */
 
 div.search-icon {
-  margin: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-div.search-icon img {
+/* 검색 */
+div.search-wrap {
+  display: flex;
+}
+
+img.search {
+  margin: 15px;
   width: 20px;
+  height: 20px;
   filter: brightness(350%);
+  cursor: pointer;
+}
+
+input.search-input {
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #1e1e2d;
+  color: white;
+  font-weight: 700;
+}
+input.search-input:focus {
+  outline: none;
+}
+
+/* 프로필 */
+div.profile {
+  display: flex;
+  cursor: pointer;
+}
+
+div.profile li {
+  list-style: none;
+  color: white;
+  margin: 15px;
+}
+
+div.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 div.body {
@@ -98,24 +181,41 @@ div.body {
   /* background-color: skyblue; */
 }
 
-/* 사이드 카테고리 헤더 */
+/* 사이드 카테고리 */
+
 div.side-category {
-  border: 1px solid black;
+  border: 1px solid grey;
   border-radius: 10px;
   width: 260px;
   height: 75%;
   position: fixed;
   top: 120px;
   left: 50px;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.side-category-wrap {
   margin: 15px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+/* 사이드 카테고리 헤더 */
+div.side-option-wrap {
+  border: 1px solid lightyellow;
+  box-shadow: 1px 1px 10px 3px grey;
+  cursor: pointer;
 }
 
 div.side-button {
   display: flex;
+  border-bottom: 1px solid grey;
+  background-color: lightyellow;
+  margin: 1px;
+}
+
+div.side-button:hover .dashboardhb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.side-button img {
@@ -152,9 +252,29 @@ div.side-content li {
   font-weight: 700;
 }
 
+li.ds1:hover {
+  font-size: 19px;
+  background-color: lightgray;
+}
+li.ds2:hover {
+  font-size: 19px;
+  background-color: lightgray;
+}
+li.ds3:hover {
+  font-size: 19px;
+  background-color: lightgray;
+}
+li.ds4:hover {
+  font-size: 19px;
+  background-color: lightgray;
+}
+li.ds5:hover {
+  font-size: 19px;
+  background-color: lightgray;
+}
+
 /* 메인 스크린 */
 div.total-screen {
-  border: 1px solid black;
   width: 75%;
   height: 100%;
   position: relative;
@@ -163,29 +283,41 @@ div.total-screen {
 }
 
 div.totla-screen-wrap {
+  width: 100%;
   display: flex;
 }
 
 div.qs-us {
   display: flex;
   flex-direction: column;
+  width: 40%;
+  min-width: 400px;
 }
 
-/* 질문 게시판 */
+/*도움 게시판 */
 div.question-board {
-  width: 450px;
+  width: 85%;
+  min-width: 350px;
   height: 190px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.question-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   padding: 0 10px;
+  background-color: lightyellow;
+  border-radius: 10px 10px 0 0;
+}
+
+div.question-title:hover .questionhb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.question-title img {
@@ -206,19 +338,28 @@ div.question-box li {
 
 /* 회원 게시판 */
 div.user-board {
-  width: 450px;
+  width: 85%;
+  min-width: 350px;
   height: 300px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.user-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   padding: 0 10px;
+  background-color: lightyellow;
+  border-radius: 10px 10px 0 0;
+}
+
+div.user-title:hover .userhb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.user-title img {
@@ -230,22 +371,37 @@ div.user-box img {
   height: 260px;
 }
 
-/* 재능 기부 게시판 */
+/* 교육 분야 게시판 */
+
+div.tl-cp-ml {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
 div.talent-board {
-  width: 840px;
+  width: 90%;
+  min-width: 550px;
   height: 280px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 10px;
-  left: 320px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.talent-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   padding: 0 10px;
+  background-color: lightyellow;
+  border-radius: 10px 10px 0 0;
+}
+
+div.talent-title:hover .talenthb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.talent-title img {
@@ -253,41 +409,69 @@ div.talent-title img {
 }
 
 div.talent-box {
+  width: 100%;
+  height: 90%;
 }
 
-div.talent-box ul {
+table.talent-list {
+  width: 100%;
+}
+
+table.talent-list tr {
+  width: 100%;
   display: flex;
+  margin-top: 5px;
 }
 
-div.talent-box li {
-  list-style: none;
-  border: 1px solid black;
+table.talent-list td {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+td img {
+  width: 90px;
+  margin: 0 auto;
 }
 
 div.talent-box li img {
   width: 100px;
+  margin: 0 auto;
 }
 
-/* 수료증 게시판 */
+/* 증명서 게시판 */
 
 div.cp-ml {
   display: flex;
+  width: 100%;
 }
 
 div.complete-board {
-  width: 330px;
+  width: 35%;
+  min-width: 250px;
   height: 210px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.complete-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   padding: 0 10px;
+  background-color: lightyellow;
+  border-radius: 10px 10px 0 0;
+}
+
+div.complete-title:hover .completehb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.complete-title img {
@@ -297,6 +481,7 @@ div.complete-title img {
 div.complete-box {
   padding: 5px;
   display: flex;
+  margin-left: 10px;
 }
 
 div.complete-box img {
@@ -314,25 +499,34 @@ div.complete-box li {
   text-align: left;
   margin: 5px 0;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 16px;
   text-align: center;
 }
 
 /* 문의 게시판 */
 div.mail-board {
-  width: 490px;
+  width: 53%;
+  min-width: 200px;
   height: 210px;
-  margin: 10px;
-  border: 2px solid black;
+  margin: 9px;
+  border: 2px solid grey;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 3px grey;
 }
 
 div.mail-title {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   padding: 0 10px;
+  background-color: lightyellow;
+  border-radius: 10px 10px 0 0;
+}
+
+div.mail-title:hover .mailhb {
+  color: gray;
+  transition: 0.3s;
 }
 
 div.mail-title img {
@@ -340,20 +534,27 @@ div.mail-title img {
 }
 
 div.mail-box {
+  width: 100%;
   padding: 5px;
 }
 
 table.mail-timeline {
-  /* border: 1px solid black; */
   border-radius: 5px;
   width: 100%;
   height: 100%;
+  font-size: 14px;
+  overflow: hidden;
 }
 
-td,
-th {
+table.mail-timeline th {
   border-right: 1px solid gray;
   text-align: left;
   margin: 3px;
   padding: 3px;
+}
+
+table.mail-timeline tr {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  margin: 10px;
 }
