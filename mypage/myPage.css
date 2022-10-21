@@ -1,0 +1,545 @@
+@charset 'utf-8';
+body {
+    margin: 0;
+    font-family: Noto Sans KR,Malgun Gothic,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #323232;
+    text-align: left;
+    background-color: #fff;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.header {
+    border-bottom: none;
+    height: 4.5rem;
+    padding: 0;
+    position: relative;
+    z-index: 1020;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .header-all{
+    width: 60.625rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-all .header-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-size-adjust: 100%;
+}
+
+.header .header-all .header-right{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.header .header-ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-size-adjust: 100%;
+}
+
+.header .header-all .header-left .header-left-item{
+
+    font-weight: 500;
+    margin-right: 1rem
+    
+}
+
+.header .header-all .header-left .header-left-item:first-child{
+
+    margin-left: 0;
+    
+}
+
+.header .header-item{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+.header .header-all .header-right .header-right-item{
+
+    margin-right: 1rem
+    
+}
+
+.header .header-all .header-right .header-right-item:first-child{
+
+    margin-left: 1rem;
+    
+}
+
+.header .header-all .header-right .headers-btn{
+
+    width: 5rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: #00a18d;
+    border-color: #009481;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+    
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn a{
+    color: inherit;
+    display: block;
+    line-height: inherit;
+}
+
+.header img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.footer-container {
+    background: #fff;
+    border-top: 0.0625rem solid #e1e1e1;
+    padding-top: 1.3125rem;
+    padding-right: 0px;
+    padding-bottom: 2.5rem;
+    padding-left: 0px;
+    display: block;
+    text-align: left;
+}
+
+.footer-container-row {
+    display: block;
+    max-width: 60.625rem;
+    padding: 0;
+    height: 72px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-container-row .col-contents {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-container-row .footer-left {
+    margin-bottom: 1.875rem;
+}
+
+.footer-container-row .col-contents p.call-number {
+    padding-bottom: 0.1875rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-stretch: normal;
+    color: #00c7ae;
+}
+
+.footer-container .text{
+    margin: 0;
+    font-size: .75rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.footer-container-row .col-contents p.work-time{
+    margin: 0;
+    font-size: .875rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.footer-container-row .col-contents p{
+    padding-bottom: 1.875rem;
+}
+
+.footer-container-row .footer-right {
+    float: right;
+    padding-bottom: 2.5rem;
+    margin-right: 3.5rem;
+}
+
+.terms {
+    padding-top :1.25rem;
+}
+
+.terms-container{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.footer-container-row .col-contents .col-contents-list-terms {
+    line-height: 1.125rem;
+    padding-right: 6rem;
+    padding-bottom: 0.5rem;
+    margin-left: 5rem;
+}
+
+.footer-container .terms{
+    font-weight: 500;
+    text-align: center;
+}
+.footer-badge{
+    margin-left: 0.5rem;
+}
+
+*{
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    font-family: Noto Sans KR,Malgun Gothic,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #323232;
+    text-align: left;
+    background-color: #fff;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
+    display:block;
+}
+
+div{
+    display: block;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a{
+    color: #323232;
+    background-color: transparent;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+}
+
+address dl, ol, ul{
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.h3, h3{
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    font-weight: 400;
+    letter-spacing: -.03125rem;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#app #app-body {
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 39.375rem;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mypage-title{
+    font-weight: 500;
+    line-height: 1.41;
+    letter-spacing: -.0462rem;
+    color: #323232;
+    margin: 0;
+    font-size: 2.125rem;
+    padding: 3.125rem 0;
+}
+
+.profile-container{
+    display: inline-block;
+    border-bottom: 0.0625rem solid;
+    border-color: #f2f2f2;
+    padding: 1rem 0;
+    margin-bottom: 1.25rem;
+    font-size: 0;
+}
+
+.thumb{
+    display: inline-block;
+    width: 4.375rem;
+    height: 4.375rem;
+    min-width: 4.375rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 0.0625rem solid #f2f2f2;
+}
+
+.user-info{
+    display: inline-block;
+    flex: 1;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 0.75rem;
+}
+
+.user-name{
+    display: flex;
+    flex: 1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #323232;
+}
+
+.name-length{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 0.3125rem;
+}
+
+.user-type{
+    flex: 0 0 auto;
+    padding-right: 1.5rem;
+}
+
+.user-id{
+    display: flex;
+    font-size: .75rem;
+    color: #b5b5b5;
+}
+
+.id-length{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 30.1875rem;
+}
+
+.account-setting-btn{
+    display: inline-block;
+    border: none;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    padding: 0.25rem 0.625rem;
+    font-size: .75rem;
+    color: #737373;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.underline{
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid;
+    border-color: #f2f2f2;
+}
+
+.main-menu{
+    display:flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #323232;
+}
+
+ul li{
+    list-style: none;
+}
+
+.sub-header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.sub-menu-container{
+    padding: 1rem 0;
+}
+
+.sub-menu-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sub-content{
+    flex: auto;
+    text-align: left;
+}
+
+.sub-menu{
+    display: block;
+}
+
+.sub-menu-title{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #323232;
+    padding: 0;
+}
+
+/* account-info */
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 39.375rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.account-info-title{
+    line-height: 3.125rem;
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    margin: 3rem, 0px;
+}
+
+.profile-image{
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0px auto;
+}
+
+.account-info-section{
+    font-size: 1rem;
+    margin: 3rem 0px 5.125rem;
+}
+
+.account-info{
+    margin-bottom: 3rem;
+}
+
+.item-container{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0px 1rem 0.5rem;
+    border-bottom: 0.0625rem solid rgb(242, 242, 242);
+}
+
+.item{
+    flex: 1 1 0%;
+    color: rgb(50, 50, 50);
+}
+
+.item-title{
+    color: rgb(181, 181, 181);
+}
+
+.item-info{
+    padding-top: 0.25rem;
+}
+
+/* certificate-storage, completed-activityl, issue-certificate, scheduled-activity, user-list */
+
+.my-page-container{
+    max-width: 100%;
+}
+
+.list-container{
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+.title-section{
+    max-width: 60.625rem;
+    margin: 3.125rem auto;
+    padding: 0;
+}
+
+.no-items{
+    margin: 11.25rem 0;
+    text-align: center!important;
+}
+
+.no-items-title{
+    margin-top: 0.75rem;
+    line-height: normal;
+    font-size: 1.125rem;
+    font-weight: 500;
+    white-space: pre-line;
+}
+
+.help-block{
+    white-space: break-spaces;
+    color: #b5b5b5;
+}
