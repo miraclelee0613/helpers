@@ -1,3 +1,4 @@
+/*----------------------------- 전체 css-------------------------------------*/
 @charset 'utf-8';
 body {
     margin: 0;
@@ -9,6 +10,9 @@ body {
     text-align: left;
     background-color: #fff;
 }
+#app{
+    text-size-adjust:100%;
+}
 ul {
     display: block;
     list-style-type: disc;
@@ -18,6 +22,31 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+form {
+    display: block;
+    margin-top: 0em;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #323232;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0.0625rem solid transparent;
+    padding: 0.6875rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*----------------------------- header css-------------------------------------*/
 
 .header {
     border-bottom: none;
@@ -144,6 +173,196 @@ a {
     vertical-align: middle;
     border-style: none;
 }
+
+/*----------------------------- main css-------------------------------------*/
+.main{
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.main .main-search-word{
+    background-image: url(main_image.jpg);
+    background-position: 50% 50%;
+    position: relative;
+    height: 28.125rem;
+    z-index: 1;
+}
+
+.main .main-search-word .dimmed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.main .main-search-word .main-search-word-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 43.75rem;
+    text-align: center;
+    padding: 0 1rem
+}
+.main .main-search-word .main-search-word-contents #welcom-text{
+    font-size: 2.125rem;
+    margin-top: 0;
+    letter-spacing: -.04375rem;
+}
+    
+
+.main .main-search-word .main-search-word-contents h1{
+    font-size: 1.75rem;
+    line-height: normal;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2.5rem
+}
+
+.main .main-search-word .main-search-word-searchbar{
+    position: relative
+}
+.main .main-search-word .main-search-word-searchbar form{
+    text-size-adjust: 100%;
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.main .main-search-word .main-search-word-searchbar .input-group-text{
+    color: #737373;
+    height: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+.input-group-text {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem);
+    padding: 0.6875rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #323232;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.0625rem solid #e1e1e1;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.p2{
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    letter-spacing: -.0125rem;
+}
+
+.main .main-search-word .main-search-word-searchbar .input-group-btn{
+    margin-left: -0.0625rem;
+    display: flex;
+}
+
+.main .main-search-word .main-search-word-searchbar .input-group-btn .input-group-btn-real{
+    height: auto;
+    padding: 0.875rem 1.5rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    vertical-align: bottom;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0;
+    outline: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    color: #fff;
+    background-color: #00c7ae;
+    border-color: #00c7ae;
+    text-transform: none;
+    overflow: visible;
+    margin-bottom: 0;
+}
+
+.search-icon{
+    width: 1.125rem;
+    margin: -0.25rem 0.25rem 0 0;
+    vertical-align: middle;
+    border-style: none;
+    cursor: pointer;
+}
+.hidden-xs{
+    color: #fff;
+    margin: 0 0.3125rem;
+    vertical-align: top;
+}
+
+.main-search-local {
+    background-color: #fafafa;
+    z-index: 0;
+    display: block;
+}
+.list-inline{
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-search-local .local_category_buttons{
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+}
+
+.main-search-local .local_category_buttons .local_category_button{
+    flex: 1;
+    width: auto;
+    font-size: 1rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.main-search-local .local_category_buttons .local_category_button .local_category_icon{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+
+}
+
+.main-search-local .local_category_buttons .local_category_button .local_category_title{
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #323232;
+    font-size: .875rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+
+/*----------------------------- footer css------------------------------------*/
 
 .footer-container {
     background: #fff;
