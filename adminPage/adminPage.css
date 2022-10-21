@@ -157,6 +157,11 @@ input.search-input:focus {
   outline: none;
 }
 
+button.searchbtn {
+  background-color: #1e1e2d;
+  border: none;
+}
+
 /* 프로필 */
 div.profile {
   display: flex;

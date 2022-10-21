@@ -46,7 +46,9 @@
             <div class="search-icon">
               <div class="search-wrap">
                 <input type="text" class="search-input" />
-                <img class="search" src="img/search.png" alt="" />
+                <button class="searchbtn">
+                  <img class="search" src="img/search.png" alt="" />
+                </button>
               </div>
               <div class="profile">
                 <ul>
@@ -110,7 +112,7 @@
               <div class="user-board">
                 <div class="user-title">
                   <h2 class="userhb">회원</h2>
-                  <img src="img/list.png" alt="" />
+                  <img src="img/bar-chart.png" alt="" />
                 </div>
                 <div class="user-box">
                   <img src="img/userChart.png" />
@@ -124,7 +126,7 @@
               <div class="talent-board">
                 <div class="talent-title">
                   <h2 class="talenthb">교육 분야</h2>
-                  <img src="img/list.png" alt="" />
+                  <!-- <img src="img/list.png" alt="" /> -->
                 </div>
                 <div class="talent-box">
                   <table class="talent-list">
@@ -173,7 +175,7 @@
                 <div class="complete-board">
                   <div class="complete-title">
                     <h2 class="completehb">증명서</h2>
-                    <img src="img/list.png" alt="" />
+                    <!-- <img src="img/list.png" alt="" /> -->
                   </div>
                   <div class="complete-box">
                     <img src="img/graduation.png" />
@@ -231,9 +233,12 @@
     let $dashul = $(".dashul");
     let $searchbtn = $(".search");
     let $searchinput = $(".search-input");
+    let $sidebtn = $(".side-button");
+    let $sidecontent = $(".side-content");
 
     $(".dashul").hide();
     $(".search-input").hide();
+    $(".side-content").hide();
 
     $movebtn.on("click", function () {
       $dashul.slideToggle();
@@ -241,6 +246,10 @@
 
     $searchbtn.on("click", function () {
       $searchinput.fadeToggle();
+    });
+
+    $sidebtn.on("click", function () {
+      $sidecontent.slideToggle();
     });
   </script>
 </html>
