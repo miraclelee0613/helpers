@@ -50,7 +50,7 @@
         </div>
     </header> 
     <main class="post-body">
-        <section class="post-detail">
+        <div class="post-detail">
             <div class="post-header">
                 <div class="post-category-subject">
                     <ol class="category-line">
@@ -59,7 +59,7 @@
                                 <span>도움받기</span>
                             </a>
                         </li>
-                        <p class="divider"></p>
+                        <img src="img/greater_than_icon.png" class="divider">
                         <li class="category-item">
                             <a href="" class="item">    <!--도움받기 수도권페이지-->
                                 <span>수도권</span>
@@ -71,16 +71,16 @@
                 <div class="post-user">
                     <div class="user-profile-wrapper">
                         <div class="user-profile-area">
-                            <img src="" alt="유저 이미지" class="profile-image">
+                            <img src="img/user_icon.png" alt="유저 이미지" class="profile-image">
                             <div class="profile-post-info">
-                                <span>유저 닉네임</span>
-                                <span>글쓴날짜 . 조회수</span>
+                                <span class="user-name">유저 닉네임</span>
+                                <span class="post-created-at">글쓴날짜 . 조회수</span>
                             </div>
                         </div>
                         <div class="post-actions">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMC43NyAxNS4xNzRjLjM3IDAgLjY3NS4yNzYuNzIzLjYzNGwuMDA3LjA5OXY1Ljg2YzAgLjM3MS0uMjc1LjY3OC0uNjMyLjcyNmwtLjA5OS4wMDdIMy4yMzFhLjczMi43MzIgMCAwIDEtLjcyNC0uNjMzbC0uMDA3LS4xdi01Ljg2YS43MzIuNzMyIDAgMCAxIDEuNDU1LS4xbC4wMDcuMXY1LjEyOGgxNi4wNzZ2LTUuMTI4YzAtLjM3LjI3NS0uNjc3LjYzMi0uNzI2bC4xLS4wMDd6TTEyLjQxMiAxLjYyOGwuMDkuMDcyIDYuMzc3IDYuMDVhLjczNC43MzQgMCAwIDEgLjAyOCAxLjAzNi43My43MyAwIDAgMS0uOTQ5LjA5OGwtLjA4NC0uMDY5LTUuMTQ1LTQuODgxdjExLjk3M2EuNzMyLjczMiAwIDAgMS0xLjQ1NC4xbC0uMDA3LS4xVjMuOTMzTDYuMTI1IDguODE1YS43My43MyAwIDAgMS0uOTUzLjA0NWwtLjA4LS4wNzRhLjczNC43MzQgMCAwIDEtLjA0NS0uOTU1bC4wNzMtLjA4IDYuMzc4LTYuMDUuMDQ2LS4wMzlhLjczNC43MzQgMCAwIDEgLjAxNC0uMDFsLS4wNi4wNDhhLjczLjczIDAgMCAxIC4yMTMtLjE0Yy4wMDUgMCAuMDA5LS4wMDIuMDEzLS4wMDRhLjcyNC43MjQgMCAwIDEgLjY5LjA3MnoiIGZpbGw9IiMyRDJEMkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K" alt="공유하기" class="icon">
+                            <img src="img/share_upload_icon.png" alt="공유하기" class="icon">
                             <div class="dropdown btn-group">
-                                <button aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle"></button>
+                                <!-- <button aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle"></button> -->
                                 <ul role="menu" class="dropdown-menu">
                                     <li>
                                         <a href="#" class="dropdown-item">신고하기</a>
@@ -99,19 +99,19 @@
                     </p>
                 </div>
                 <div class="body-image">
-                    <ul class="grid-image-wrapper">
+                    <ul class="body-image-wrapper">
                         <li>
-                            <img src="" alt="글 사진" class="image">
+                            <img src="img/photo_icon.png" alt="글 사진" class="image">
                         </li>
                     </ul>
                 </div>
                 <div class="post-react">
                     <div class="post-react-item like">
-                        ::before
+                        <img src="img/like_icon.png">
                         <span class="text">좋아요 갯수</span>
                     </div>
                     <div class="post-react-item comments">
-                        ::before
+                        <img src="img/comments_icon.png">
                         <span class="text">댓글 갯수</span>
                     </div>
                 </div>
@@ -120,17 +120,20 @@
             <div class="post-comments">
                 <div class="comment-input-box">
                     <label for="file-input" class="attach-file-label">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im0xMi43NSAyLjUgMS42NzggMS43NmgyLjkwNWMxLjAwOSAwIDEuODM0Ljc5IDEuODM0IDEuNzU5djEwLjU1NWMwIC45NjgtLjgyNSAxLjc2LTEuODM0IDEuNzZIMi42NjdjLTEuMDA5IDAtMS44MzQtLjc5Mi0xLjgzNC0xLjc2VjYuMDJjMC0uOTY4LjgyNS0xLjc2IDEuODM0LTEuNzZoMi45MDVMNy4yNSAyLjVoNS41ek0xMCA4LjE1NWMtMS44OTggMC0zLjQzOCAxLjUyLTMuNDM4IDMuMzkzIDAgMS44NzIgMS41NCAzLjM5MiAzLjQzOCAzLjM5MiAxLjg5OCAwIDMuNDM4LTEuNTIgMy40MzgtMy4zOTIgMC0xLjg3My0xLjU0LTMuMzkzLTMuNDM4LTMuMzkzeiIgZmlsbD0iIzJEMkQyRCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=" alt="이미지 첨부" class="attach-file-icon">
-                        <div class="custom-file file-input" aria-required="false" aria-invalid="false">
+                        <img src="img/camera_icon.png" alt="이미지 첨부" class="attach-file-icon">
+                        <!-- <div class="custom-file file-input" aria-required="false" aria-invalid="false">
                             <input type="file" accept="image/jpg,image/jpeg,image/png,image/gif,image/bmp" class="custom-file-input">
                             <label for="file-input" class="custom-file-label">
                                 <span >No file chosen</span>
                             </label>
-                        </div>
+                        </div> -->
                     </label>
-                    <div></div>
-                    <div></div>
+                    <div class="comment-body">
+                        <textarea class="comment-input" placeholder="댓글을 남겨보세요"></textarea>
+                    </div>
+                    <div class="write-comment">등록</div>
                 </div>
+                <!--  -->
                 <ul class="post-comments-list">
                     <li class="post-comments-list-item">
                         <div class="post-comment-wrapper">
@@ -178,48 +181,48 @@
                         </div>
                     </li>
                 </ul>
-
-                <footer class="footer">
-                    <div class="footer-container">
-                            <div class="footer-container-row container">
-                                <div class="col-contents footer-left">
-                                    <p class="text call-number">1599-5319</p>
-                                    <p class="text work-time">
-                                        평일 10:00 - 18:00
-                                        <br>
-                                        점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외
-                                    </p>
-                                </div>
-                                <div class="col-contents footer-right">
-                                    <a href="" target="_blank" class="footer-badge" >
-                                        <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-facebook.svg" alt="페이스북 계정" >
-                                    </a>
-                                    <a href="" target="_blank" class="footer-badge" >
-                                        <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-instagram.svg" alt="인스타그램 계정" >
-                                    </a>
-                                    <a href="" target="_blank" class="footer-badge" >
-                                        <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverblog.svg" alt="네이버 블로그" >
-                                    </a>
-                                    <a href="" target="_blank" class="footer-badge" >
-                                        <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-tistory.svg" alt="티스토리 블로그" >
-                                    </a>
-        
-                                </div>
-                    
-                        </div>
-                        <div class="footer-container-row container terms">
-                            <div class="col-contents terms-container">
-                                <div class="col-contents-list-terms">
-                                    <a href="" class="text term">&nbsp&nbsp&nbsp&nbsp이용약관&nbsp&nbsp</a>
-                                    <a href="" class="text term">개인정보처리방침&nbsp&nbsp</a>
-                                    <a href="" class="text term">사업자정보확인</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>               
-                </footer>
             </div>
-        </section>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+                <div class="footer-container-row container">
+                    <div class="col-contents footer-left">
+                        <p class="text call-number">1599-5319</p>
+                        <p class="text work-time">
+                            평일 10:00 - 18:00
+                            <br>
+                            점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외
+                        </p>
+                    </div>
+                    <div class="col-contents footer-right">
+                        <a href="" target="_blank" class="footer-badge" >
+                            <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-facebook.svg" alt="페이스북 계정" >
+                        </a>
+                        <a href="" target="_blank" class="footer-badge" >
+                            <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-instagram.svg" alt="인스타그램 계정" >
+                        </a>
+                        <a href="" target="_blank" class="footer-badge" >
+                            <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverblog.svg" alt="네이버 블로그" >
+                        </a>
+                        <a href="" target="_blank" class="footer-badge" >
+                            <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-tistory.svg" alt="티스토리 블로그" >
+                        </a>
+    
+                    </div>
+        
+            </div>
+            <div class="footer-container-row container terms">
+                <div class="col-contents terms-container">
+                    <div class="col-contents-list-terms">
+                        <a href="" class="text term">&nbsp&nbsp&nbsp&nbsp이용약관&nbsp&nbsp</a>
+                        <a href="" class="text term">개인정보처리방침&nbsp&nbsp</a>
+                        <a href="" class="text term">사업자정보확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>               
+    </footer>
 </body>
 </html>
+
