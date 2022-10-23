@@ -89,6 +89,11 @@ body {
     padding-left: 1rem;
 }
 
+.user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 .user-name {
     margin: 0 0 0.125rem;
     font-weight: 500;
@@ -96,6 +101,17 @@ body {
     font-size: 14px;
     line-height: 1.57142857;
     letter-spacing: -.3px;
+}
+
+.send-btn {
+    width: 3.75rem;
+    border-radius: 6px;
+    padding: 0.3125rem 0.5rem;
+    border: 0;
+    color: #00c7ae;
+    background-color: #eafaf9;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .post-created-at {
