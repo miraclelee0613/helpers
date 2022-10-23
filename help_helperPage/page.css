@@ -145,6 +145,7 @@ ul li {
     background: none;
     font-size: 1rem;
     width: 100%;
+    outline: none;
 }
 
 .input-group img.reset {
