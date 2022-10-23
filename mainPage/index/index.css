@@ -757,7 +757,6 @@ user-profile .user-profile-div::after{
     max-width: 75rem;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 8.5rem;
     justify-content: space-around;
 }
 
