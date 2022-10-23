@@ -34,7 +34,7 @@
                         <li class="header-left-item header-item">
                             <a href="">문의하기</a>
                         </li>
-                        <li class="header-left-item header-item">
+                        <li class="header-left-item header-item is-hidden">
                             <a href="">소개글</a>
                         </li>
                     </ul>
@@ -57,7 +57,72 @@
             </div>
         </div>
     </header>
-    <header class="is-block">
+
+    <!-- 헤더(공통) / 메인 -->
+
+    <main>
+        <!-- 메인\네비바 -->
+        <div class="container">
+            <nav class="breadcrumb cs_navi columns" aria-label="breadcrumb">
+                <ul class="column is-half" style="height: 38px; margin-top: 12px;">
+                    <li>
+                        <a href="../mainPage/index/index.html">홈</a>
+                    </li>
+                    <li>
+                        <a href="">문의하기</a>
+                    </li>
+                    <li>
+                        <a href="">문의 등록</a>
+                    </li>
+
+                </ul>
+                <div class="column is-one-quarter"></div>
+                <form role="search" class="column is-one-quarter pt-5 m-0 ">
+                    <input type="search" placeholder="검색" aria-label="검색">
+                </form>
+            </nav>
+
+            <h1 class="is-size-3" style="font-weight: lighter;">문의 등록</h1>
+            <div class="form">
+
+                <form action="" class="column is-half">
+                    <label for="">이메일 주소<input type="email" class="input"></label>
+                    <p class="help">문의 답변을 받을 이메일을 입력해주세요</p>
+                    <label for="">제목<input type="text" class="input"></label>
+                    <label for="">설명<input type="text" class="textarea"></label>
+                    <p class="help">요청에 관한 세부 정보를 입력하세요.</p>
+                    <br>
+                    <label for="">이메일(선택)<input type="text" class="input"></label>
+                    <p class="help">가입시 입력했던 이메일을 입력해주세요.</p>
+                    <br>
+                    <label for="">휴대폰 번호<input type="tel" class="input"></label>
+                    <p class="help">가입시 입력했던 휴대폰 번호를 입력해주세요.</p>
+                    <br>
+                    <div class="file">
+                        <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                                <span class="file-label">
+                                    첨부파일 선택
+                                </span>
+                            </span>
+                            <br>
+                        </label>
+                    </div>
+                    <p class="help">관련 파일을 업로드 해주세요.</p>
+                    <br>
+                    <button class="button" style="background-color: #00a18d; border-color: #009481; line-height: 1.5;">
+                        <a href="" style="color: #fff;">제출하기</a>
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <!--     <header class="is-block">
         <div class="column is-inline-block is-one-quarter-widescreen is-offset-one-quarter-widescreen pl-6">
             <div class="is-size-1">문의하기</div>
         </div>
@@ -66,7 +131,6 @@
         </div>
     </header>
 
-    <!-- 헤더(공통) / 네비바 -->
 
     <nav class="breadcrumb cs_navi" aria-label="breadcrumb">
         <ul class="container" style="height: 38px; margin-top: 12px;">
@@ -79,7 +143,6 @@
         </ul>
     </nav>
 
-    <!-- 네비바 / 메인 -->
 
     <div class="container">
         <div class="columns">
@@ -101,7 +164,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
