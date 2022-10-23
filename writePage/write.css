@@ -52,10 +52,16 @@ body {
     padding: 1rem 1.25rem;
     border-top: 0.0625rem solid #f4f4f4;
     border-bottom: 0.0625rem solid #f4f4f4;
+    width: 100%;
+}
+
+.attach-file-area {
+    width: 60.625rem;
+    margin: auto;
 }
 
 .attach-file-area .add-image-icon {
-    padding-left: 230px;
+    padding-left: 80px;
     width: 1.25rem;
     height: 1.25rem;
     background: url("img/camera_icon.png") no-repeat 50%;
@@ -67,16 +73,12 @@ body {
 }
 
 .image-count {
-    padding-left: 100px;
+    padding-left: 20px;
     font-weight: 500;
     color: #888;
     font-size: 14px;
 }
 
-.write-body {
-    width: 1163px;
-    height: 487.98px;
-}
 
 .write-title-container {
     width: 60.625rem;
