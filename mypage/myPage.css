@@ -1,5 +1,5 @@
 @charset 'utf-8';
-*{
+/* *{
     word-break: break-word;
 }
 
@@ -65,8 +65,9 @@ p{
     height: 100%;
     position: relative;
     flex-grow: 1;
-}
+} */
 
+/* mpage-personal */
 .container{
     width: 100%;
     max-width: 39.375rem;
@@ -88,15 +89,21 @@ p{
 
 .profile-container{
     display: inline-block;
-    border-bottom: 0.0625rem solid;
-    border-color: #f2f2f2;
     padding: 1rem 0;
     margin-bottom: 1.25rem;
     font-size: 0;
 }
 
+.profile-container-a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #323232;
+    background-color: transparent;
+}
+
 .thumb{
-    display: inline-block;
+    display: block;
     width: 4.375rem;
     height: 4.375rem;
     min-width: 4.375rem;
@@ -106,7 +113,7 @@ p{
 }
 
 .user-info{
-    display: inline-block;
+    display: block;
     flex: 1;
     overflow: hidden;
     text-align: left;
@@ -115,7 +122,9 @@ p{
 
 .user-name{
     display: flex;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     font-size: 1.125rem;
     font-weight: 500;
     color: #323232;
@@ -126,10 +135,14 @@ p{
     white-space: nowrap;
     overflow: hidden;
     padding-right: 0.3125rem;
+
 }
 
 .user-type{
     flex: 0 0 auto;
+}
+
+.user-name .user-type{
     padding-right: 1.5rem;
 }
 
@@ -144,6 +157,7 @@ p{
     white-space: nowrap;
     overflow: hidden;
     max-width: 30.1875rem;
+    width: 453.83px;
 }
 
 .account-setting-btn{
@@ -165,6 +179,10 @@ p{
     border-color: #f2f2f2;
 }
 
+.menu-underline{
+    padding: 0;
+}
+
 .main-menu{
     display:flex;
     align-items: center;
@@ -172,6 +190,7 @@ p{
     font-size: 1.125rem;
     font-weight: 700;
     color: #323232;
+    margin-top: 20px;
 }
 
 ul li{
@@ -193,6 +212,7 @@ ul li{
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .sub-content{
@@ -212,6 +232,36 @@ ul li{
     padding: 0;
 }
 
+.arrow{
+    font-size: 0;
+}
+
+.right-arrow{
+    font-size: .75rem;
+}
+
+/* organization */
+.organization-title-section{
+    max-width: 60.625rem;
+    padding: 0;
+    margin: 0;
+}
+
+.organization-title{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.account-holder-list{
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.account-holder-link{
+    cursor: pointer;
+}
+
 /* account-info */
 .container{
     padding-left: 1rem;
@@ -226,7 +276,7 @@ ul li{
     line-height: 3.125rem;
     font-size: 2.125rem;
     font-weight: 500;
-    color: rgb(50, 50, 50);
+    color: #323232;
     margin: 3rem, 0px;
 }
 
@@ -234,7 +284,40 @@ ul li{
     position: relative;
     width: 6.25rem;
     height: 6.25rem;
-    margin: 0px auto;
+    margin: 0 auto;
+}
+
+.user-profile-picture{
+    position: relative;
+
+}
+
+.user-profile-picture-frame{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0.0625rem solid #f2f2f2;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #e1e1e1;
+}
+
+.camera-icon{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+img, svg{
+    vertical-align: middle;
+
+}
+
+img{
+    border-style: none;
 }
 
 .account-info-section{
@@ -244,6 +327,7 @@ ul li{
 
 .account-info{
     margin-bottom: 3rem;
+    padding: 0;
 }
 
 .item-container{
@@ -267,7 +351,13 @@ ul li{
     padding-top: 0.25rem;
 }
 
-/* certificate-storage, completed-activityl, issue-certificate, scheduled-activity, user-list */
+.delete-account{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* certificate-list */
 
 .my-page-container{
     max-width: 100%;
@@ -276,8 +366,124 @@ ul li{
 .list-container{
     max-width: 60.625rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
+}
 
+.title-section{
+    max-width: 60.625rem;
+    margin: 3.125rem auto;
+    padding: 0;
+}
+
+.content-section{
+    max-width: 68.625rem;
+    margin: 0 auto 1.25rem;
+}
+
+/* .content-list-section{
+
+} */
+
+.content-list{
+    margin: 0;
+    padding: 0;
+}
+
+.content-item{
+    padding: 1.25rem 0.5rem;
+    cursor: pointer;
+    border-bottom: 0.0625rem solid #f4f4f4;
+}
+
+.content-item-location{
+    color: rgb(197,197,197);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.content-title{
+    margin: 0 0 0.25rem;
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 500;
+}
+
+.content{
+    margin: 0 0 0.5rem;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.content-item-date{
+    color: rgb(197,197,197);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+/* my-activity-list, my-post-list */
+
+.tab-list{
+    display: flex;
+    border-bottom: 0.0625rem solid #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.tab{
+    padding: 0.6875rem 0.25rem 0.8125rem;
+    cursor: pointer;
+    color: rgb(169, 169, 169);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.tab-selected{
+    color: rgb(45, 45, 45);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 700;
+    border-bottom: 0.125rem solid #2d2d2d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* certificate-storage, completed-activityl, issue-certificate, scheduled-activity, user-list */
+/* 여기 다시 */
+.my-page-container{
+    max-width: 100%;
+}
+
+.list-container{
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .title-section{
