@@ -9,7 +9,7 @@
       type="image/x-icon"
       href="../img/customer-service.png"
     />
-    <link rel="stylesheet" href="../css/adminPage-request.css" />
+    <link rel="stylesheet" href="../css/adminPage-userlist.css" />
     <link rel="stylesheet" href="../css/adminPage-interface.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,17 +45,17 @@
               </li>
             </a>
             <a href="adminPage-request.html">
-              <li class="pointer select">
+              <li class="pointer">
                 <span>도움 요청</span>
-                <img src="../img/next.png" />
               </li>
             </a>
             <li class="pointer">
               <span>교육 분야</span>
             </li>
             <a href="adminPage-userlist.html">
-              <li class="pointer">
+              <li class="pointer select">
                 <span>회 원</span>
+                <img src="../img/next.png" />
               </li>
             </a>
             <li class="pointer">
@@ -75,8 +75,8 @@
         <div class="content-header">
           <!-- 컨텐츠 주제 -->
           <div class="content-name">
-            <img src="../img/telephone.png" />
-            <h3>Helpers 도움 요청</h3>
+            <img src="../img/user-list.png" />
+            <h3>Helpers 회원 목록</h3>
           </div>
           <!-- 오늘의 통계 -->
           <div class="today-box">
@@ -116,231 +116,158 @@
           <div class="request-wrap">
             <!-- 제목 -->
             <div class="title-box">
-              <h2>요청 목록</h2>
-              <p>12+</p>
+              <h2>회원 목록</h2>
+              <p>6+</p>
             </div>
             <div class="request-box">
               <!-- 테이블 -->
               <table class="type03">
                 <thead>
                   <tr>
-                    <th scope="cols" class="total-name">
-                      <label for="totalname"
-                        ><input type="checkbox" id="totalname" /> 이 름
-                      </label>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </th>
-                    <th scope="cols">나 이</th>
-                    <th scope="cols">내 용</th>
+                    <th scope="cols" class="total-name">이 름</th>
+                    <th scope="cols">나이</th>
+                    <th scope="cols">아이디</th>
+                    <th scope="cols">거주지</th>
                     <th scope="cols">전화 번호</th>
                     <th scope="cols">이메일</th>
-                    <th scope="cols">삭 제</th>
+                    <th scope="cols">가입 날짜</th>
+                    <th scope="cols">도움요청 수</th>
+                    <th scope="cols">문의 수</th>
+                    <th scope="cols">탈퇴</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">
-                      <label for="name1"
-                        ><input type="checkbox" id="name1" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name2"
-                        ><input type="checkbox" id="name2" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name3"
-                        ><input type="checkbox" id="name3" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name4"
-                        ><input type="checkbox" id="name4" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name5"
-                        ><input type="checkbox" id="name5" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name6"
-                        ><input type="checkbox" id="name6" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name7"
-                        ><input type="checkbox" id="name7" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name8"
-                        ><input type="checkbox" id="name8" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name9"
-                        ><input type="checkbox" id="name9" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">
-                      <label for="name10"
-                        ><input type="checkbox" id="name10" /> 문성준</label
-                      >
-                    </th>
+                    <th scope="row">문성준</th>
                     <td>26</td>
-                    <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
-                    </td>
+                    <td>msj1</td>
+                    <td>서울</td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../img/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">문성준</th>
+                    <td>26</td>
+                    <td>msj1</td>
+                    <td>서울</td>
+                    <td>010-1111-1111</td>
+                    <td>msj1@gmail.com</td>
+                    <td>2022/10/25</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><button class="secession">탈퇴</button></td>
                   </tr>
                 </tbody>
               </table>
