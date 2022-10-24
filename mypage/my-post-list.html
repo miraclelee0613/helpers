@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>내 글 목록</title>
     <link rel="stylesheet" href="myPage.css">
     <link rel="stylesheet" href="../mainPage/index/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
 </head>
 <body>
-    <!-- 예정된 활동 -->
+    <!-- 내 글 목록 -->
     <!-- 헤더 필요 -->
     <header class="header">
         <div class="header-all">
@@ -50,20 +51,68 @@
             </div>
         </div>
     </header>
-    <!-- 예정된 활동 바디 -->
+    <!-- 내 글 목록 바디 -->
     <div id="app-body">
         <div class="my-page-container">
             <div class="list-container">
                 <section class="title-section">
-                    <h1 class="title">예정된 활동</h1>
+                    <h1 class="title">내 글 목록</h1>
                 </section>
-                <!-- 활동에대한 취소버튼 필요 -->
+                <ul class="tab-list">
+                    <li class="tab tab-selected">작성 글</li>
+                    <li class="tab">작성 댓글</li>
+                </ul>
                 <section class="content-section">
                     <!-- 활동이 늘었을 시 변경될것 -->
-                    <article class="no-items">
-                        <h3 class="no-items-title">예정된 활동이 없습니다</h3>
+                    <!-- <article class="no-items">
+                        <h3 class="no-items-title">활동이 없습니다</h3>
                         <p class="help-block">도움주는 활동을 해 보아요!</p>
-                    </article>
+                    </article> -->
+                    <ul class="content-list">
+                        <!-- 안에있는 리스트 -->
+                        <li class="content-item">
+                            <span class="content-item-location">전북</span>
+                            <div class="collapsed">
+                                <div class="line-clamp" style="max-height: 3rem; line-height: 1.5; -webkit-line-clamp: 2;">
+                                    <p class="content-title">코딩을 배우고 싶습니다</p>
+                                </div>
+                            </div>
+                            <div class="collapsed">
+                                <div class="line-clamp">
+                                    <p class="content">코딩을 알려주세요</p>
+                                </div>
+                            </div>
+                            <span class="content-item-date">2022.10.22</span>
+                        </li>
+                        <li class="content-item">
+                            <span class="content-item-location">전북</span>
+                            <div class="collapsed">
+                                <div class="line-clamp">
+                                    <p class="content-title">코딩을 배우고 싶습니다</p>
+                                </div>
+                            </div>
+                            <div class="collapsed">
+                                <div class="line-clamp">
+                                    <p class="content">코딩을 알려주세요</p>
+                                </div>
+                            </div>
+                            <span class="content-item-date">2022.10.22</span>
+                        </li>
+                        <li class="content-item">
+                            <span class="content-item-location">전북</span>
+                            <div class="collapsed">
+                                <div class="line-clamp">
+                                    <p class="content-title">코딩을 배우고 싶습니다</p>
+                                </div>
+                            </div>
+                            <div class="collapsed">
+                                <div class="line-clamp">
+                                    <p class="content">코딩을 알려주세요</p>
+                                </div>
+                            </div>
+                            <span class="content-item-date">2022.10.22</span>
+                        </li>
+                    </ul>
                 </section>
             </div>
         </div>
