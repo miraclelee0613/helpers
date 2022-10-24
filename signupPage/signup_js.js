@@ -13,7 +13,6 @@ function checkz() {
 
     //아이디 공백 확인
     if ($("#id-input").val() == "") {
-        //   alert("아이디 입력바람");
         $("#id-help-empty").removeclass('is-hidden');
         $("#id-input").focus();
         return false;
@@ -23,7 +22,6 @@ function checkz() {
 
     //아이디의 유효성 검사
     if (!getCheck.test($("#id-input").val())) {
-        // alert("형식에 맞게 입력해주세요");
         $("#id-help-danger").removeclass('is-hidden');
         $("#id-input").val("");
         $("#id-input").focus();
@@ -34,7 +32,6 @@ function checkz() {
 
     //비밀번호
     if (!getCheck.test($("#pw1-input").val())) {
-        // alert("형식에 맞춰서 PW를 입력해줘용");
         $("#pw-help-danger").removeclass('is-hidden');
         $("#pw1-input").val("");
         $("#pw1-input").focus();
@@ -45,7 +42,6 @@ function checkz() {
     
     //아이디랑 비밀번호랑 같은지
     if ($("#name-input").val() == ($("#pw1-input").val())) {
-        // alert("비밀번호가 ID와 똑같으면 안!대!");
         $("#pw-help-danger").removeclass('is-hidden');
         $("#pw1-input").val("");
         $("#pw1-input").focus();
@@ -55,7 +51,6 @@ function checkz() {
     
     //비밀번호 똑같은지
     if ($("#pw1-input").val() != ($("#pw2-input").val())) {
-        // alert("비밀번호가 틀렸네용.");
         if(!($("#pw2-help-success").hasclass('is-hidden'))){
             $("#pw2-help-success").addclass('is-hidden');
         }
@@ -71,7 +66,6 @@ function checkz() {
 
     //이메일 공백 확인
     if ($("#input-email").val() == "") {
-        // alert("이메일을 입력해주세요");
         $("#email-help-warning").removeclass('is-hidden');
         $("#input-email").focus();
         return false;
@@ -81,7 +75,6 @@ function checkz() {
 
     //이메일 유효성 검사
     if (!getemail.test($("#input-email").val())) {
-        // alert("이메일형식에 맞게 입력해주세요")
         $("#email-help-danger1").removeclass('is-hidden');
         $("#input-email").val("");
         $("#input-email").focus();
@@ -97,7 +90,6 @@ function checkz() {
 
     //이름 공백 확인
     if ($("#name-input").val() == "") {
-        //   alert("아이디 입력바람");
         $("#name-help-empty").removeclass('is-hidden');
         $("#name-input").focus();
         return false;
@@ -107,7 +99,6 @@ function checkz() {
 
     //이름 유효성
     if (!getName.test($("#name-input").val())) {
-        // alert("이름 똑띠 쓰세용");
         $("#name-help-danger").removeclass('is-hidden');
         $("#name-input").val("");
         $("#name-input").focus();

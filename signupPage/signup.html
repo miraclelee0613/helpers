@@ -9,16 +9,30 @@
     <script lang="javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="../signupPage\normalize.css">
 <link rel="stylesheet" href="../mainPage/index/index.css">
+
+<!-- 스크립트 -->
 <script>
     $(document).ready(function () {
         $("p.help").hide();
         $("p[name=welcome]").show();
     })
-    $(".help").blur(checkz);
+    $(".help").blur(checkz());
 </script>
+
+<!-- 스타일 -->
+<style>
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+    }
+</style>
 
 <body>
     <div class="container">
@@ -99,15 +113,18 @@
 
                     <label class="label">이름</label>
                     <div class="control">
-                        <input class="input" type="text" id="name-input" placeholder="이름(실명)을 입력해주세요" onblur="checkz()">
+                        <input class="input" type="text" id="name-input" placeholder="이름(실명)을 입력해주세요" onblur="checkz()"
+                            onfocus="checkz()">
                     </div>
                     <p class="help" name="welcome" id="name-welcome">이름을 입력해주세요.</p>
                     <!-- 처음에 보여주고 입력창을 떠나는 순간 아래로 이동, 이후 활성x -->
 
-                    <p class="help is-warning" id="name-help-empty" name="is-empty" onblur="checkz()">이름 칸은 비워둘 수 없습니다.</p>
+                    <p class="help is-warning" id="name-help-empty" name="is-empty" onblur="checkz()">이름 칸은 비워둘 수 없습니다.
+                    </p>
                     <!-- 비어있을 때 활성 -->
 
-                    <p class="help is-danger" id="name-help-danger" name="is-danger" onblur="checkz()">한글과 영문 대/소문자를 사용하세요. (특수기호, 공백 사용
+                    <p class="help is-danger" id="name-help-danger" name="is-danger" onblur="checkz()">한글과 영문 대/소문자를
+                        사용하세요. (특수기호, 공백 사용
                         불가)
                     </p> <!-- 특수문자, 공백 발견 시 활성 -->
 
