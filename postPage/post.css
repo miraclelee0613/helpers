@@ -290,6 +290,11 @@ ul li {
     font-weight: 700;
 }
 
+.send-btn {
+    display: flex;
+    align-items: center;
+}
+
 .content {
     padding-top: 13px;
 }
@@ -318,3 +323,4 @@ ul li {
     width: 17px;
     height: 17px;
 }
+
