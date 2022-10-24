@@ -291,7 +291,8 @@ ul li {
 }
 
 .send-btn {
-    
+    display: flex;
+    align-items: center;
 }
 
 .content {
