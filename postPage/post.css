@@ -218,7 +218,7 @@ ul li {
     border-radius: 8px;
     border: 0.0625rem solid #f2f2f2;
     background-color: #fff;
-    width: 550px;
+    width: 600px;
 }
 
 .attach-file-label {
@@ -290,9 +290,10 @@ ul li {
     font-weight: 700;
 }
 
-.send-btn {
+.user-info .send-btn {
     display: flex;
     align-items: center;
+    /* width: 4rem; */
 }
 
 .content {
