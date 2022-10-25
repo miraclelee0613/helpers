@@ -96,6 +96,7 @@ ul.site-visit {
 ul.site-visit li {
   display: flex;
   margin: 1.25rem;
+  padding: 10px;
 }
 ul.site-visit li img {
   width: 2rem;
@@ -114,10 +115,12 @@ ul.category {
 ul.category li {
   display: flex;
   margin: 1.25rem;
+  padding: 10px;
 }
 ul.category li img {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
+  margin: auto;
 }
 ul.category li span {
   font-size: 1.125rem;
@@ -144,7 +147,7 @@ div.content-header {
   display: flex;
   justify-content: space-between;
 }
-
+/* 컨텐츠 주제 */
 div.content-name {
   display: flex;
   margin: auto 0;
@@ -193,7 +196,7 @@ div.profile-box span {
   border-radius: 2rem;
   padding-left: 10px;
 }
-
+/* 로그아웃 */
 button.logout {
   margin: auto 0.625rem;
   width: 5.625rem;
@@ -209,6 +212,26 @@ button.logout:hover {
   border: 1px solid #2196f3;
   transition: 0.5s;
 }
+/* 오늘의 통계 */
+div.today-box {
+  display: flex;
+}
+div.today-count {
+  display: flex;
+  margin: 0 5px;
+  text-align: center;
+  /* border: 2px solid #036; */
+}
+div.today-count img {
+  width: 40px;
+  margin: auto 0;
+  filter: opacity(0.5) drop-shadow(0 0 0 #036);
+}
+div.today-count p {
+  margin: auto 0;
+  color: #036;
+  font-weight: 700;
+}
 
 /* 컨텐츠 바디 */
 div.content-body {
@@ -219,57 +242,19 @@ div.content-body {
   flex-direction: column;
 }
 
-div.today-wrap {
-  width: 90%;
-  height: 200px;
-  display: flex;
-  margin: 0 auto;
-}
-
-/* 컨텐츠 div */
-/* 오늘 컨텐츠 */
-div.today {
-  width: 90%;
-  height: 150px;
-  background-color: white;
-  box-shadow: 0.063rem 0 0.313rem #084b8a;
-  border-radius: 20px;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-div.today img {
-  width: 5rem;
-  height: 5rem;
-  background-color: #f9fbfc;
-  border: 1px solid lightgray;
-}
-div.today-result {
-  text-align: center;
-  margin: 2rem;
-}
-div.today-result span:nth-child(1) {
-  width: 3rem;
-  font-size: 3rem;
-  color: #283140;
-}
-div.today-result span:nth-child(2) {
-  font-size: 1.3rem;
-  color: #c0c7c8;
-}
 /* 메인 컨텐츠 목록 */
 div.item-list {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  height: 340px;
+  margin: 20px auto 0 auto;
 }
 div.item {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: white;
   box-shadow: 0.063rem 0 0.313rem #084b8a;
-  border-radius: 20px;
-  margin: 0 10px 30px 10px;
+  margin: 0 10px 10px 10px;
 }
 
 div.item h3 {
@@ -290,7 +275,8 @@ canvas#total-chart {
 /* 신규회원 */
 div.new-user {
   width: 100%;
-  height: 208px;
+  /* height: 260px; */
+  height: 77%;
   display: flex;
   flex-direction: column;
   padding: 0 0.938rem;
