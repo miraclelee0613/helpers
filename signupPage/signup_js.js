@@ -45,6 +45,7 @@ function checkz() {
         $("#pw-help-danger").removeclass('is-hidden');
         $("#pw1-input").val("");
         $("#pw1-input").focus();
+        return false;
     }else{
         $("#pw-help-danger").addclass('is-hidden');
     }
@@ -112,6 +113,7 @@ function checkz() {
         if(!($("#name-help-success").hasclass('is-hidden'))){
             $("#name-help-success").removeclass('is-hidden');
         }
+        return true;
     }else{
         $("#name-help-success").addclass('is-hidden');
     }

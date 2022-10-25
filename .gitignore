@@ -49,3 +49,6 @@ dependency-reduced-pom.xml
 
 # VS Code
 .vscode
+
+# TestFiles
+test.*
