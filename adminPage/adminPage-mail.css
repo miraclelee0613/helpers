@@ -1,3 +1,6 @@
+a {
+  color: black;
+}
 div.request-wrap {
   width: 95%;
   height: 600px;
@@ -91,7 +94,11 @@ table.type03 td:nth-child(6) {
 table.type03 td:nth-child(6) img {
   margin-left: 14px;
 }
-
+table.type03 thead tr th:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 table.type03 thead th {
   padding: 10px;
   font-weight: bold;
@@ -104,11 +111,20 @@ td.request-select:hover {
   cursor: pointer;
   background-color: #ceecf5;
 }
+/* 모달창 */
+div.modal-mail-title h3 {
+  border-bottom: 2px solid #666;
+  padding-bottom: 10px;
+}
 
 /* 삭제 이미지 */
 img.delete {
   width: 15px;
   height: 15px;
+}
+
+img.delete:hover {
+  filter: brightness(130%);
 }
 
 table.type03 thead th img {

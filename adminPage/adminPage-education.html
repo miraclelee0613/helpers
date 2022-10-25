@@ -9,7 +9,7 @@
       type="image/x-icon"
       href="img/customer-service.png"
     />
-    <link rel="stylesheet" href="adminPage-userlist.css" />
+    <link rel="stylesheet" href="adminPage-education.css" />
     <link rel="stylesheet" href="adminPage-interface.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,14 +50,14 @@
               </li>
             </a>
             <a href="adminPage-education.html">
-              <li class="pointer">
+              <li class="pointer select">
                 <span>교육 분야</span>
+                <img src="img/next.png" />
               </li>
             </a>
             <a href="adminPage-userlist.html">
-              <li class="pointer select">
+              <li class="pointer">
                 <span>회 원</span>
-                <img src="img/next.png" />
               </li>
             </a>
             <a href="adminPage-certificate.html">
@@ -81,8 +81,8 @@
         <div class="content-header">
           <!-- 컨텐츠 주제 -->
           <div class="content-name">
-            <img src="img/user-list.png" />
-            <h3>Helpers 회원 목록</h3>
+            <img src="img/book.png" />
+            <h3>Helpers 교육 분야</h3>
           </div>
           <!-- 오늘의 통계 -->
           <div class="today-box">
@@ -122,158 +122,134 @@
           <div class="request-wrap">
             <!-- 제목 -->
             <div class="title-box">
-              <h2>회원 목록</h2>
-              <p>6+</p>
+              <h2>교육 분야 목록</h2>
             </div>
             <div class="request-box">
               <!-- 테이블 -->
               <table class="type03">
                 <thead>
                   <tr>
-                    <th scope="cols" class="total-name">이 름</th>
-                    <th scope="cols">나이</th>
-                    <th scope="cols">아이디</th>
-                    <th scope="cols">거주지</th>
+                    <th scope="cols" class="total-name">교육 분야</th>
+                    <th scope="cols">주제</th>
+                    <th scope="cols">담당자</th>
+                    <th scope="cols">담당 인원</th>
                     <th scope="cols">전화 번호</th>
                     <th scope="cols">이메일</th>
-                    <th scope="cols">가입 날짜</th>
-                    <th scope="cols">도움요청 수</th>
-                    <th scope="cols">문의 수</th>
-                    <th scope="cols">탈퇴</th>
+                    <th scope="cols">개설 날짜</th>
+                    <th scope="cols">강의 현황</th>
+                    <th scope="cols">삭제</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
+                    <th scope="row">코딩</th>
+                    <td>자바</td>
+                    <td class="teacher-name">한동석</td>
+                    <td>46</td>
                     <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
+                    <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">문성준</th>
-                    <td>26</td>
-                    <td>msj1</td>
-                    <td>서울</td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><button class="secession">탈퇴</button></td>
+                    <td>강의중</td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                 </tbody>
               </table>
