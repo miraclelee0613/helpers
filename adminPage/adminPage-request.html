@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
     <title>Helpers AdminPage</title>
   </head>
   <body>
@@ -50,17 +54,21 @@
                 <img src="img/next.png" />
               </li>
             </a>
-            <li class="pointer">
-              <span>교육 분야</span>
-            </li>
+            <a href="adminPage-education.html">
+              <li class="pointer">
+                <span>교육 분야</span>
+              </li>
+            </a>
             <a href="adminPage-userlist.html">
               <li class="pointer">
                 <span>회 원</span>
               </li>
             </a>
-            <li class="pointer">
-              <span>증명서</span>
-            </li>
+            <a href="adminPage-certificate.html">
+              <li class="pointer">
+                <span>증명서</span>
+              </li>
+            </a>
             <a href="adminPage-mail.html">
               <li class="pointer">
                 <span>문 의</span>
@@ -127,8 +135,8 @@
                 <thead>
                   <tr>
                     <th scope="cols" class="total-name">
-                      <label for="totalname"
-                        ><input type="checkbox" id="totalname" /> 이 름
+                      <label for="total--name"
+                        ><input type="checkbox" id="total--name" /> 이 름
                       </label>
                       <img
                         class="delete pointer"
@@ -147,12 +155,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name1"
-                        ><input type="checkbox" id="name1" /> 문성준</label
+                        ><input type="checkbox" id="name1" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -167,12 +178,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name2"
-                        ><input type="checkbox" id="name2" /> 문성준</label
+                        ><input type="checkbox" id="name2" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -187,12 +201,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name3"
-                        ><input type="checkbox" id="name3" /> 문성준</label
+                        ><input type="checkbox" id="name3" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -207,12 +224,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name4"
-                        ><input type="checkbox" id="name4" /> 문성준</label
+                        ><input type="checkbox" id="name4" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -227,12 +247,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name5"
-                        ><input type="checkbox" id="name5" /> 문성준</label
+                        ><input type="checkbox" id="name5" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -247,12 +270,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name6"
-                        ><input type="checkbox" id="name6" /> 문성준</label
+                        ><input type="checkbox" id="name6" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -267,12 +293,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name7"
-                        ><input type="checkbox" id="name7" /> 문성준</label
+                        ><input type="checkbox" id="name7" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -287,12 +316,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name8"
-                        ><input type="checkbox" id="name8" /> 문성준</label
+                        ><input type="checkbox" id="name8" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -307,12 +339,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name9"
-                        ><input type="checkbox" id="name9" /> 문성준</label
+                        ><input type="checkbox" id="name9" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -327,12 +362,15 @@
                   <tr>
                     <th scope="row">
                       <label for="name10"
-                        ><input type="checkbox" id="name10" /> 문성준</label
+                        ><input type="checkbox" id="name10" name="dl-btn" />
+                        문성준</label
                       >
                     </th>
                     <td>26</td>
                     <td class="request-select">
-                      자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                      <a href="#modal1" rel="modal:open">
+                        자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?</a
+                      >
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
@@ -346,6 +384,29 @@
                   </tr>
                 </tbody>
               </table>
+              <!-- 모달창 -->
+              <div id="modal1" class="modal">
+                <div class="modal-mail">
+                  <div class="modal-mail-title">
+                    <h3>
+                      제목 : 자바가 너무 어려워요. 들을 수 있는 강의가 있을까요?
+                    </h3>
+                  </div>
+                  <div class="modal-mail-content">
+                    <span
+                      >자바를 배우고 싶어요.자바를 배우고 싶어요.자바를 배우고
+                      싶어요.자바를 배우고 싶어요.자바를 배우고 싶어요.자바를
+                      배우고 싶어요.자바를 배우고 싶어요.자바를 배우고 싶어요.
+                      자바를 배우고 싶어요.자바를 배우고 싶어요.자바를 배우고
+                      싶어요.자바를 배우고 싶어요.자바를 배우고 싶어요.자바를
+                      배우고 싶어요.자바를 배우고 싶어요. 자바를 배우고
+                      싶어요.자바를 배우고 싶어요.자바를 배우고 싶어요.자바를
+                      배우고 싶어요.자바를 배우고 싶어요.자바를 배우고
+                      싶어요.자바를 배우고 싶어요.
+                    </span>
+                  </div>
+                </div>
+              </div>
               <!-- 페이지 버튼 -->
             </div>
             <div class="page-btn">
@@ -378,6 +439,22 @@
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="../js/adminPage-main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#total--name").click(function () {
+        if ($("#total--name").is(":checked"))
+          $("input[name=dl-btn]").prop("checked", true);
+        else $("input[name=dl-btn]").prop("checked", false);
+      });
+
+      $("input[name=dl-btn]").click(function () {
+        var total = $("input[name=dl-btn]").length;
+        var checked = $("input[name=dl-btn]:checked").length;
+
+        if (total != checked) $("#total--name").prop("checked", false);
+        else $("#total--name").prop("checked", true);
+      });
+    });
+  </script>
 </html>
