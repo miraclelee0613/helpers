@@ -50,6 +50,24 @@
         </div>
     </header>
     <main class="post-body">
+        <!-- 모달창 -->
+        <main class="modal">
+            <div class="modal-body">
+                <h3>정보</h3>
+                <div class="user-info-title">이름</div>
+                <div class="user-info-contents">(유저네임)</div>
+                <hr>
+                <div class="user-info-title">번호</div>
+                <div class="user-info-contents">010-****-****</div>
+                <hr>
+                <div class="user-info-title">이메일</div>
+                <div class="user-info-contents">--@naver.com</div>
+                <hr>
+                <div class="user-info-title">지역</div>
+                <div class="user-info-contents">수도권</div>
+            </div>
+        </main>
+        <!--  -->
         <div class="post-detail">
             <div class="post-header">
                 <div class="post-category-subject">
@@ -73,7 +91,7 @@
                 <div class="post-user">
                     <div class="user-profile-wrapper">
                         <div class="user-profile-area">
-                            <img src="img/user_icon.png" alt="유저 이미지" class="profile-image">
+                            <img src="img/user_icon.png" alt="유저 이미지" class="profile-image content-modal-btn">
                             <div class="profile-post-info">
                                 <span class="user-name">유저 닉네임</span>
                                 <span class="post-created-at">글쓴날짜 . 조회수</span>
@@ -141,14 +159,14 @@
                     <li class="post-comments-list-item">
                         <div class="post-comment-wrapper">
                             <div class="profile-image">
-                                <img src="img/user_icon.png" alt="유저 사진" class="image">
+                                <img src="img/user_icon.png" alt="유저 사진" class="image content-modal-btn">
                             </div>
                             <div class="comment-info">
                                 <div class="user-info">
                                     <div class="user">
                                         <span class="user-name">유저네임</span>
                                     </div>
-                                    <button class="send-btn">수락요청</button>
+                                    <button>수락</button>
                                 </div>
                                 <div class="content">
                                     <p class="text">
@@ -185,14 +203,14 @@
                     <li class="post-comments-list-item">
                         <div class="post-comment-wrapper">
                             <div class="profile-image">
-                                <img src="img/user_icon.png" alt="유저 사진" class="image">
+                                <img src="img/user_icon.png" alt="유저 사진" class="image content-modal-btn">
                             </div>
                             <div class="comment-info">
                                 <div class="user-info">
                                     <div class="user">
                                         <span class="user-name">유저네임</span>
                                     </div>
-                                    <button class="send-btn">수락요청</button>
+                                    <button>수락</button>
                                 </div>
                                 <div class="content">
                                     <p class="text">
@@ -228,14 +246,14 @@
                     <li class="post-comments-list-item">
                         <div class="post-comment-wrapper">
                             <div class="profile-image">
-                                <img src="img/user_icon.png" alt="유저 사진" class="image">
+                                <img src="img/user_icon.png" alt="유저 사진" class="image content-modal-btn">
                             </div>
                             <div class="comment-info">
                                 <div class="user-info">
                                     <div class="user">
                                         <span class="user-name">유저네임</span>
                                     </div>
-                                    <button class="send-btn">수락요청</button>
+                                    <button>수락</button>
                                 </div>
                                 <div class="content">
                                     <p class="text">
@@ -312,5 +330,27 @@
         </div>
     </footer>
 </body>
+<script>
+    const body = document.querySelector('body');
+    const modal = document.querySelector('.modal');
+    const btnOpenPopup = document.querySelector('.content-modal-btn');
 
+    btnOpenPopup.addEventListener('click', () => {
+        modal.classList.toggle('show');
+
+        if (modal.classList.contains('show')) {
+            body.style.overflow = 'hidden';
+        }
+    });
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.classList.toggle('show');
+
+            if (!modal.classList.contains('show')) {
+                body.style.overflow = 'auto';
+            }
+        }
+    });
+</script>
 </html>
