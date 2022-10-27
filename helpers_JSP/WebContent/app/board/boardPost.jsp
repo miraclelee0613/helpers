@@ -12,45 +12,43 @@
     <title>도움받기-글 포스트</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-all">
-            <div class="header-left">
-                <section style="margin-right: 1rem;">
-                    <a href="">
-                        <img src="./../../assets/images/board/help.png" alt="">
-                    </a>
-                </section>
-                <nav>
-                    <ul class="header-ul">
-                        <li class="header-left-item header-item">
-                            <a href="">커뮤니티</a>
-                        </li>
-                        <li class="header-left-item header-item">
-                            <a href="">문의하기</a>
-                        </li>
-                        <!-- <li class="header-left-item header-item">
-                            <a href="">소개글</a>
-                        </li> -->
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <ul class="header-ul">
-                        <li class="header-right-item header-item">
-                            <a href="../../loginPage/login.html">로그인</a>
-                        </li>
-                        <li class="header-right-item header-item">
-                            <a href="../../signupPage/signup.html">회원가입</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="btn headers-btn header-right-item">
-                    <a href="">기관등록</a>
-                </button>
-            </div>
-        </div>
-    </header>
+	<header class="header">
+		<div class="header-all">
+			<div class="header-left">
+				<section style="margin-right: 1rem;">
+					<a href=""> <img src="./../../assets/images/index/help.png"
+						alt="">
+					</a>
+				</section>
+				<nav>
+					<ul class="header-ul">
+						<li class="header-left-item header-item"><a href="">게시판</a></li>
+						<li class="header-left-item header-item"><a href="">문의하기</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-right">
+				<nav>
+					<ul class="header-ul">
+						<li class="header-right-item header-item" style="margin-right: 0;">
+							<a href="../../signupPage/signup.html">line9988님</a>
+						</li>
+						<li class="header-right-item header-item"
+							style="margin-right: 0; margin-left: 1rem;"><a
+							href="../../signupPage/signup.html">내 정보</a></li>
+					</ul>
+				</nav>
+				<div class="usermenu">
+					<div class="usermenu-button">
+						<div class="user-profile">
+							<div class="user-profile-div"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
     <main class="post-body">
         <!-- 모달창 -->
         <main class="modal">

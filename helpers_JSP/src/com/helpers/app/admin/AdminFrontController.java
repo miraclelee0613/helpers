@@ -24,22 +24,19 @@ public class AdminFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-//		if(target.equals("/member/join.me")) {
-//			result = new Result();
-//			result.setPath("/app/member/join.jsp");
-//			
-//		}else if(target.equals("/member/joinOk.me")) {
-//			
-//		}else if(target.equals("/member/checkId.me")) {
-//			new CheckIdController().execute(req, resp);
-//			
-//		}else if(target.equals("/member/login.me")) {
-//			
-//		}else if(target.equals("/member/loginOk.me")) {
-//			
-//		}else if(target.equals("/member/logout.me")) {
-//			
-//		}
+		if(target.equals("/admin/adminIndex.admin")) {
+//			adminIndex.jsp
+		}else if(target.equals("/admin/certificate.admin")) {
+//			certificate.jsp
+		}else if(target.equals("/admin/post.admin")) {
+//			post.jsp
+		}else if(target.equals("/admin/qna.admin")) {
+//			qna.jsp
+		}else if(target.equals("/admin/userlist.admin")) {
+//			userlist.jsp
+		}else if(target.equals("/admin/.admin")) {
+			
+		}
 		
 		if(result != null) {
 			if(result.isRedirect()) {

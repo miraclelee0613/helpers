@@ -24,21 +24,50 @@ public class MemberFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-		if(target.equals("/member/join.me")) {
-			result = new Result();
-			result.setPath("/app/member/join.jsp");
-			
-		}else if(target.equals("/member/joinOk.me")) {
-			
-		}else if(target.equals("/member/checkId.me")) {
-			new CheckIdController().execute(req, resp);
-			
+		if(target.equals("/member/accountSettings.me")) {
+//			accountSettings.jsp
+		}else if(target.equals("/member/activityList.me")) {
+//			activityList.jsp
+		}else if(target.equals("/member/certificateList.me")) {
+//			certificateList.jsp
+		}else if(target.equals("/member/join.me")) {
+//			join.jsp
+		}else if(target.equals("/member/joinInst.me")) {
+//			joinInst.jsp
 		}else if(target.equals("/member/login.me")) {
-			
+//			login.jsp
+		}else if(target.equals("/member/mypage.me")) {
+//			mypage.jsp
+		}else if(target.equals("/member/mypageInst.me")) {
+//			mypageInst.jsp
+		}else if(target.equals("/member/postList.me")) {
+//			postList.jsp
+		}else if(target.equals("/member/checkEmail.me")) {
+//			CheckEmailController	
+		}else if(target.equals("/member/checkId.me")) {
+//			CheckIdController
+		}else if(target.equals("/member/checkMobile.me")) {
+//			CheckMobileNumberController
+		}else if(target.equals("/member/joinOk.me")) {
+//			JoinOkController
 		}else if(target.equals("/member/loginOk.me")) {
-			
-		}else if(target.equals("/member/logout.me")) {
-			
+//			LoginOkController
+		}else if(target.equals("/member/updateActivityOk.me")) {
+//			ActivityListController
+		}else if(target.equals("/member/deleteActivityOk.me")) {
+//			ActivityListController
+		}else if(target.equals("/member/completeActivityOk.me")) {
+//			ActivityListController			
+		}else if(target.equals("/member/stopActivityOk.me")) {
+//			ActivityListController
+		}else if(target.equals("/member/updatePostOk.me")) {
+//			PostListController
+		}else if(target.equals("/member/deletePostOk.me")) {
+//			PostListController
+		}else if(target.equals("/member/updateCommentOk.me")) {
+//			PostListController			
+		}else if(target.equals("/member/deleteCommentOk.me")) {
+//			PostListController			
 		}
 		
 		if(result != null) {

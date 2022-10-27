@@ -23,7 +23,7 @@
                     <nav>
                         <ul class="header-ul">
                             <li class="header-left-item header-item">
-                                <a href="">커뮤니티</a>
+                                <a href="">게시판</a>
                             </li>
                             <li class="header-left-item header-item">
                                 <a href="">문의하기</a>
@@ -137,7 +137,7 @@
                             <a href="" class="card-link1">
                                 <div class="card1">
                                     <div class="card-body1">
-                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/idea-3082824_1280.jpg) ;"></div>
+                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/askhelp.png) ;"></div>
                                         <h4 class="card-title1">도움 주기</h4>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                             <a href="" class="card-link1">
                                 <div class="card1">
                                     <div class="card-body1">
-                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/question_woman.jpg) "></div>
+                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/givehelp.png) "></div>
                                         <h4 class="card-title1">도움 받기</h4>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                         </section>
                     </section>
                     <div class="main-banner-container">
-                        <img src="./../../assets/images/index/—Pngtree—green small fresh forest banner_1185908.jpg" alt="" class="main-banner-item" style="width: 970px; height:180px ;">
+                        <!-- <img src="./../../assets/images/index/—Pngtree—green small fresh forest banner_1185908.jpg" alt="" class="main-banner-item" style="width: 970px; height:180px ;">-->                    
                     </div>
                     <h2 class="title"></h2>
                     <h2 class="title" style="margin-bottom: 3rem;">인기있는 강좌를 알아보세요</h2>
