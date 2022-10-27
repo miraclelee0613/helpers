@@ -11,8 +11,8 @@
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-<link rel="stylesheet" href="../../assets/css/member/normalize.css">
-<link rel="stylesheet" href="../../assets/css/member/index.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/member/normalize.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/member/index.css">
 
 <body scroll="No">
     <!-- ====================================헤더(공통)============================= -->
