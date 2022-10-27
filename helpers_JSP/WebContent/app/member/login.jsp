@@ -10,8 +10,8 @@
     <title>도움을 주는 사람들 | 로그인</title>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-<link rel="stylesheet" href="../../assets/css/member/normalize.css">
-<link rel="stylesheet" href="../../assets/css/member/index.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/member/normalize.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/member/index.css">
 
 <style>
     body {

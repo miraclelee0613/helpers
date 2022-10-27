@@ -11,8 +11,8 @@
       type="image/x-icon"
       href="../../assets/images/admin/customer-service.png"
     />
-    <link rel="stylesheet" href="../../assets/css/admin/post.css" />
-    <link rel="stylesheet" href="../../assets/css/admin/interface.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/post.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/interface.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
