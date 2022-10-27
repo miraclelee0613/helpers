@@ -23,13 +23,10 @@
                     <nav>
                         <ul class="header-ul">
                             <li class="header-left-item header-item">
-                                <a href="">커뮤니티</a>
+                                <a href="">게시판</a>
                             </li>
                             <li class="header-left-item header-item">
                                 <a href="">문의하기</a>
-                            </li>
-                            <li class="header-left-item header-item">
-                                <a href="">소개글</a>
                             </li>
                         </ul>
                     </nav>
@@ -41,7 +38,7 @@
                                 <a href="../../signupPage/signup.html" >line9988님</a>
                             </li>
                             <li class="header-right-item header-item" style="margin-right:0; margin-left: 1rem;">
-                                <a href="../../signupPage/signup.html" >마이페이지</a>
+                                <a href="../../signupPage/signup.html" >내 정보</a>
                             </li>
                         </ul>
                     </nav>
@@ -143,7 +140,7 @@
                             <a href="" class="card-link1">
                                 <div class="card1">
                                     <div class="card-body1">
-                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/idea-3082824_1280.jpg) ;"></div>
+                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/askhelp.png); width="480px"; height="250px";"></div>
                                         <h4 class="card-title1">도움 주기</h4>
                                     </div>
                                 </div>
@@ -153,7 +150,7 @@
                             <a href="" class="card-link1">
                                 <div class="card1">
                                     <div class="card-body1">
-                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/question_woman.jpg) "></div>
+                                        <div class="card-image1" style="background-image: url(./../../assets/images/index/givehelp.png) "></div>
                                         <h4 class="card-title1">도움 받기</h4>
                                     </div>
                                 </div>
@@ -161,7 +158,7 @@
                         </section>
                     </section>
                     <div class="main-banner-container">
-                        <img src="./../../assets/images/index/—Pngtree—green small fresh forest banner_1185908.jpg" alt="" class="main-banner-item" style="width: 970px; height:180px ;">
+<!--                         <img src="./../../assets/images/index/—Pngtree—green small fresh forest banner_1185908.jpg" alt="" class="main-banner-item" style="width: 970px; height:180px ;"> -->
                     </div>
                     <h2 class="title"></h2>
                     <h2 class="title" style="margin-bottom: 3rem;">인기있는 강좌를 알아보세요</h2>
@@ -384,57 +381,50 @@
                                         </div>
                                     </div>
                                 </section>
-                                
                             </section>
                         </section>
                     </section>
-                    
                 </section>
             </div>
-
         </main>
-      
         <!-- -------------------footer---------------------------------------- -->
-        <footer class="footer">
-            <div class="footer-container">
-                    <div class="footer-container-row container">
-                        <div class="col-contents footer-left">
-                            <p class="text call-number">1599-5319</p>
-                            <p class="text work-time">
-                                평일 10:00 - 18:00
-                                <br>
-                                점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외
-                            </p>
-                        </div>
-                        <div class="col-contents footer-right">
-                            <a href="" target="_blank" class="footer-badge" >
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-facebook.svg" alt="페이스북 계정" >
-                            </a>
-                            <a href="" target="_blank" class="footer-badge" >
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-instagram.svg" alt="인스타그램 계정" >
-                            </a>
-                            <a href="" target="_blank" class="footer-badge" >
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverblog.svg" alt="네이버 블로그" >
-                            </a>
-                            <a href="" target="_blank" class="footer-badge" >
-                                <img src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-tistory.svg" alt="티스토리 블로그" >
-                            </a>
-
-                        </div>
-            
-                </div>
-                <div class="footer-container-row container terms">
-                    <div class="col-contents terms-container">
-                        <div class="col-contents-list-terms">
-                            <a href="" class="text term">&nbsp&nbsp&nbsp&nbsp이용약관&nbsp&nbsp</a>
-                            <a href="" class="text term">개인정보처리방침&nbsp&nbsp</a>
-                            <a href="" class="text term">사업자정보확인</a>
-                        </div>
-                    </div>
-                </div>
-            </div>               
-        </footer>
-    </div>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-container-row container">
+					<div class="col-contents footer-left">
+						<p class="text call-number">1599-5319</p>
+						<p class="text work-time">
+							평일 10:00 - 18:00 <br> 점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외
+						</p>
+					</div>
+					<div class="col-contents footer-right">
+						<a href="" target="_blank" class="footer-badge"> <img
+							src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-facebook.svg"
+							alt="페이스북 계정">
+						</a> <a href="" target="_blank" class="footer-badge"> <img
+							src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-instagram.svg"
+							alt="인스타그램 계정">
+						</a> <a href="" target="_blank" class="footer-badge"> <img
+							src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverblog.svg"
+							alt="네이버 블로그">
+						</a> <a href="" target="_blank" class="footer-badge"> <img
+							src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-tistory.svg"
+							alt="티스토리 블로그">
+						</a>
+					</div>
+				</div>
+				<div class="footer-container-row container terms">
+					<div class="col-contents terms-container">
+						<div class="col-contents-list-terms">
+							<a href="" class="text term">&nbsp&nbsp&nbsp&nbsp이용약관&nbsp&nbsp</a>
+							<a href="" class="text term">개인정보처리방침&nbsp&nbsp</a> <a href=""
+								class="text term">사업자정보확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
         <!-- -------------------main---------------------------------------- -->

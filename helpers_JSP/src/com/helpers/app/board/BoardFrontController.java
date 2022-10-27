@@ -24,22 +24,26 @@ public class BoardFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-//		if(target.equals("/member/join.me")) {
-//			result = new Result();
-//			result.setPath("/app/member/join.jsp");
-//			
-//		}else if(target.equals("/member/joinOk.me")) {
-//			
-//		}else if(target.equals("/member/checkId.me")) {
-//			new CheckIdController().execute(req, resp);
-//			
-//		}else if(target.equals("/member/login.me")) {
-//			
-//		}else if(target.equals("/member/loginOk.me")) {
-//			
-//		}else if(target.equals("/member/logout.me")) {
-//			
-//		}
+		if(target.equals("/board/boardMain.bo")) {
+//			boardMain.jsp
+		}else if(target.equals("/board/boardPost.bo")) {
+//			boardPost.jsp
+		}else if(target.equals("/board/boardWriteGive.bo")) {
+//			boardWriteGive.jsp	
+		}else if(target.equals("/board/boardWriteReceive.bo")) {
+//			boardWriteReceive.jsp
+		}else if(target.equals("/board/boardClickAcceptOk.bo")) {
+//			BoardClickAcceptOkController
+		}else if(target.equals("/board/boardLikeClickOk.bo")) {
+//			BoardLikeClickOkController
+		}else if(target.equals("/board/boardPostOk.bo")) {
+//			BoardPostOkController	
+		}else if(target.equals("/board/boardSearchPost.bo")) {
+//			BoardSearchPostController
+		}else if(target.equals("/board/boardUploadImageOk.bo")) {
+//			BoardUploadImageOkController
+		}
+		
 		
 		if(result != null) {
 			if(result.isRedirect()) {

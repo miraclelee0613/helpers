@@ -24,22 +24,11 @@ public class IndexFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-//		if(target.equals("/member/join.me")) {
-//			result = new Result();
-//			result.setPath("/app/member/join.jsp");
-//			
-//		}else if(target.equals("/member/joinOk.me")) {
-//			
-//		}else if(target.equals("/member/checkId.me")) {
-//			new CheckIdController().execute(req, resp);
-//			
-//		}else if(target.equals("/member/login.me")) {
-//			
-//		}else if(target.equals("/member/loginOk.me")) {
-//			
-//		}else if(target.equals("/member/logout.me")) {
-//			
-//		}
+		if(target.equals("/index/index.in")) {
+//			index.jsp
+		}else if(target.equals("/index/indexLoggedIn.in")) {
+//			indexLogin.jsp
+		}
 		
 		if(result != null) {
 			if(result.isRedirect()) {
