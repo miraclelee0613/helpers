@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board/boardPost.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
-    <title>도움주기-글 포스트</title>
+    <title>도움받기-글 포스트</title>
 </head>
 <body>
 	<header class="header">

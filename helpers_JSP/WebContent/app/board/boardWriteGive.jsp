@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board/boardWrite.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
-    <title>도움받기-글쓰기</title>
+    <title>도움주기-글쓰기</title>
 </head>
 <body>
     <header class="header">
@@ -66,7 +67,7 @@
                         <option value="jeju">제주</option>
                         <option value="online">온라인</option>
                     </select>
-                    <span class="write-title">도움받기 페이지</span>
+                    <span class="write-title">도움주기 페이지</span>
                     <button class="btn write-submit">등록</button>
                 </div>
             </div>

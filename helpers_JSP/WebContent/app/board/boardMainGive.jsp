@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board/boardMain.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
-    <title>도움게시판-도움받기</title>
+    <title>도움게시판-도움주기</title>
 </head>
 <body>
 	<header class="header">
@@ -61,12 +61,12 @@
                     </button>
             </div>
             <ul class="community-category">
-                     <!--선택된 페이지--> 
-                <li class="help selected">   
-                    <a href="" class="link-text link-text-selected">도움받기</a>
+                <li class="help">   
+                    <a href="" class="link-text">도움받기</a>
                 </li>
-                <li class="helper">
-                    <a href="" class="link-text">도움주기</a>
+                <!--선택된 페이지--> 
+                <li class="helper selected">
+                    <a href="" class="link-text link-text-selected">도움주기</a>
                 </li>
             </ul>
             <!-- 지역 카테고리 -->

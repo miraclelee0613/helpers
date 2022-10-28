@@ -9,46 +9,48 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board/boardMain.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
-    <title>도움게시판-도움주기</title>
+    <title>도움게시판-도움받기</title>
 </head>
 <body>
 	<header class="header">
-		<div class="header-all">
-			<div class="header-left">
-				<section style="margin-right: 1rem;">
-					<a href=""> <img src="./../../assets/images/index/help.png"
-						alt="">
-					</a>
-				</section>
-				<nav>
-					<ul class="header-ul">
-						<li class="header-left-item header-item"><a href="">게시판</a></li>
-						<li class="header-left-item header-item"><a href="">문의하기</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header-right">
-				<nav>
-					<ul class="header-ul">
-						<li class="header-right-item header-item" style="margin-right: 0;">
-							<a href="../../signupPage/signup.html">line9988님</a>
-						</li>
-						<li class="header-right-item header-item"
-							style="margin-right: 0; margin-left: 1rem;"><a
-							href="../../signupPage/signup.html">내 정보</a></li>
-					</ul>
-				</nav>
-				<div class="usermenu">
-					<div class="usermenu-button">
-						<div class="user-profile">
-							<div class="user-profile-div"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+        <div class="header-all">
+            <div class="header-left">
+                <section style="margin-right: 1rem;">
+                    <a href="">
+                        <img src="./../../assets/images/board/help.png" alt="">
+                    </a>
+                </section>
+                <nav>
+                    <ul class="header-ul">
+                        <li class="header-left-item header-item">
+                            <a href="">커뮤니티</a>
+                        </li>
+                        <li class="header-left-item header-item">
+                            <a href="">문의하기</a>
+                        </li>
+                        <!-- <li class="header-left-item header-item">
+                            <a href="">소개글</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="header-ul">
+                        <li class="header-right-item header-item" >
+                            <a href="../../loginPage/login.html">로그인</a>
+                        </li>
+                        <li class="header-right-item header-item">
+                            <a href="../../signupPage/signup.html">회원가입</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn headers-btn header-right-item">
+                    <a href="">기관등록</a>
+            </button>
+            </div>
+        </div>
+    </header>
     <main class="community-body">
         <div class="community">
             <div class="community-header">
@@ -59,12 +61,12 @@
                     </button>
             </div>
             <ul class="community-category">
-                <li class="help">   
-                    <a href="" class="link-text">도움받기</a>
+                     <!--선택된 페이지--> 
+                <li class="help selected">   
+                    <a href="" class="link-text link-text-selected">도움받기</a>
                 </li>
-                <!--선택된 페이지--> 
-                <li class="helper selected">
-                    <a href="" class="link-text link-text-selected">도움주기</a>
+                <li class="helper">
+                    <a href="" class="link-text">도움주기</a>
                 </li>
             </ul>
             <!-- 지역 카테고리 -->
