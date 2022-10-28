@@ -220,6 +220,11 @@ ul li {
     width: 600px;
 }
 
+.comment-body textarea {
+    background-color: transparent;
+}
+
+
 .attach-file-label {
     display: inline-block;
 }

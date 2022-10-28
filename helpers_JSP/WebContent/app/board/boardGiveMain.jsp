@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board/boardMain.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700">
-    <title>도움게시판</title>
+    <title>도움게시판-도움받기</title>
 </head>
 <body>
 	<header class="header">
