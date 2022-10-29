@@ -29,7 +29,7 @@ public class BoardClickAcceptOkController {
 		boardDAO.post(boardVO);
 
 		result.setRedirect(true);
-		result.setPath(req.getContextPath() + "/board/login.me");
+		result.setPath(req.getContextPath() + "/board/boardClickAcceptOk.bo");
 
 		return result;
 	}

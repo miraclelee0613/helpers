@@ -36,12 +36,12 @@ public class BoardFrontController extends HttpServlet {
 		} else if (target.equals("/board/boardWriteGive.bo")) {
 //			boardWriteGive.jsp	
 			result = new Result();
-			result.setPath("/app/board/boardWriteGive.jsp");
+			result.setPath("/app/board/boardGiveWrite.jsp");
 			
 		} else if (target.equals("/board/boardWriteReceive.bo")) {
 //			boardWriteReceive.jsp
 			result = new Result();
-			result.setPath("/app/board/boardWriteReceive.jsp");
+			result.setPath("/app/board/boardReceiveWrite.jsp");
 			
 		} else if (target.equals("/board/boardClickAcceptOk.bo")) {
 //			BoardClickAcceptOkController
