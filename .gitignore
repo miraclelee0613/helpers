@@ -52,3 +52,6 @@ dependency-reduced-pom.xml
 
 # TestFiles
 test.*
+
+# servers
+/Servers/
