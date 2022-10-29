@@ -52,3 +52,6 @@ dependency-reduced-pom.xml
 
 # TestFiles
 test.*
+
+# server file in eclipse
+Servers/
