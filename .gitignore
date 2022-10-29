@@ -53,5 +53,5 @@ dependency-reduced-pom.xml
 # TestFiles
 test.*
 
-# servers
-/Servers/
+#servers
+Tomcat v9.0 Server at localhost-config/
