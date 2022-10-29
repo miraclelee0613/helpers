@@ -28,8 +28,8 @@ public class BoardPostOkController {
 		
 		boardDAO.post(boardVO);
 		
-		result.setRedirect(true);
-		result.setPath(req.getContextPath() + "/board/login.me");
+		result.setRedirect(false);
+		result.setPath(req.getContextPath() + "/board/boardPostOk.bo");
 		
 		return result;
 	}
