@@ -91,7 +91,7 @@
                 <div class="post-user">
                     <div class="user-profile-wrapper">
                         <div class="user-profile-area">
-                            <img src="../../assets/images/board/user_icon.png" alt="유저 이미지" class="profile-image content-modal-btn">
+                            <img src="../../assets/images/board/user_icon.png" alt="유저 이미지" class="profile-image">
                             <div class="profile-post-info">
                                 <span class="user-name">유저 닉네임</span>
                                 <span class="post-created-at">글쓴날짜 . 조회수</span>
