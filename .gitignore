@@ -53,7 +53,5 @@ dependency-reduced-pom.xml
 # TestFiles
 test.*
 
-#servers
-
-/Servers/
+# Eclipes Servers Folder
 Servers/
