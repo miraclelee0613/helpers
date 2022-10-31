@@ -7,6 +7,7 @@ public class BoardVO {
 	private String boardContent;
 	private String boardDate;
 	private int boardReadCount;
+	private int boardType;
 	
 	public BoardVO() {;}
 
@@ -56,6 +57,14 @@ public class BoardVO {
 
 	public void setBoardReadCount(int boardReadCount) {
 		this.boardReadCount = boardReadCount;
+	}
+
+	public int getBoardType() {
+		return boardType;
+	}
+
+	public void setBoardType(int boardType) {
+		this.boardType = boardType;
 	}
 	
 	

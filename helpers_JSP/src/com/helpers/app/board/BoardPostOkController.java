@@ -20,11 +20,11 @@ public class BoardPostOkController {
 		Result result = new Result();
 		
 		boardVO.setMemberNumber(Integer.valueOf(req.getParameter("memberNumber")));
-		boardVO.setBoardNumber(Integer.valueOf(req.getParameter("boardNumber")));
+//		boardVO.setBoardNumber(Integer.valueOf(req.getParameter("boardNumber")));
 		boardVO.setBoardTitle(req.getParameter("boardTitle"));
 		boardVO.setBoardContent(req.getParameter("boardContent"));
 //		boardVO.setBoardDate(req.getParameter("boardDate"));
-		boardVO.setBoardReadCount(Integer.valueOf(req.getParameter("boardReadCount")));
+//		boardVO.setBoardReadCount(Integer.valueOf(req.getParameter("boardReadCount")));
 		
 		boardDAO.post(boardVO);
 		
