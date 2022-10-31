@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../../assets/images/admin/customer-service.png"
+      href="${pageContext.request.contextPath}/assets/images/admin/customer-service.png"
     />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/qna.css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/interface.css" />
@@ -40,35 +40,37 @@
             <li class="pointer">
               <span>Helpers</span>
             </li>
-            <li class="pointer">
-              <span>사이트 바로가기</span>
-            </li>
+            <a href="${pageContext.request.contextPath}/index/index.in" style="color: #E0ECF8">
+              <li class="pointer">
+              	<span>사이트 바로가기</span>  
+           	  </li>
+            </a>
           </ul>
           <ul class="category">
-            <a href="adminPage-main.html">
+            <a href="${pageContext.request.contextPath}/admin/index.admin">
               <li class="pointer">
                 <span>관리자 홈</span>
               </li>
             </a>
-            <a href="adminPage-request.html">
-              <li class="pointer">
-                <span>도움 요청</span>
-              </li>
+            <a href="${pageContext.request.contextPath}/admin/post.admin">
+            <li class="pointer">
+              <span>도움 요청</span>
+            </li>
             </a>
-            <a href="adminPage-userlist.html">
+            <a href="${pageContext.request.contextPath}/admin/userlist.admin">
               <li class="pointer">
                 <span>회 원</span>
               </li>
             </a>
-            <a href="adminPage-certificate.html">
+            <a href="${pageContext.request.contextPath}/admin/certificate.admin">
               <li class="pointer">
                 <span>증명서</span>
               </li>
             </a>
-            <a href="adminPage-mail.html">
+            <a href="${pageContext.request.contextPath}/admin/qna.admin">
               <li class="pointer select">
                 <span>문 의</span>
-                <img src="../../assets/images/admin/next.png" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/next.png" />
               </li>
             </a>
           </ul>
@@ -82,36 +84,36 @@
         <div class="content-header">
           <!-- 컨텐츠 주제 -->
           <div class="content-name">
-            <img src="../../assets/images/admin/email.png" />
+            <img src="${pageContext.request.contextPath}/assets/images/admin/email.png" />
             <h3>Helpers 문의 목록</h3>
           </div>
           <!-- 오늘의 통계 -->
           <div class="today-box">
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 방문자<br />42</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 회원가입<br />31</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 도움 요청<br />28</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 문의<br />24</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
           </div>
           <!-- 프로필 사진 로그아웃 -->
           <div class="content-header-profile">
             <div class="profile-box pointer">
-              <img src="../../assets/images/admin/bukbuk.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/bukbuk.png" />
               <span>벅벅코딩</span>
             </div>
             <button class="logout pointer">Logout</button>
@@ -135,17 +137,20 @@
                       <label for="total--name"
                         ><input type="checkbox" id="total--name" /> 이 름
                       </label>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
                     </th>
                     <th scope="cols">아이디</th>
                     <th scope="cols">제 목</th>
                     <th scope="cols">전화 번호</th>
                     <th scope="cols">이메일</th>
-                    <th scope="cols">삭 제</th>
+                    <th scope="cols">
+                      삭 제
+                      &nbsp&nbsp&nbsp
+                      <img
+                        class="delete pointer"
+                        src="${pageContext.request.contextPath}/assets/images/admin/delete.png"
+                        alt="삭제"
+                      />
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -162,202 +167,7 @@
                     </td>
                     <td>010-1111-1111</td>
                     <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name2"
-                        ><input type="checkbox" id="name2" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name3"
-                        ><input type="checkbox" id="name3" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name4"
-                        ><input type="checkbox" id="name4" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name5"
-                        ><input type="checkbox" id="name5" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name6"
-                        ><input type="checkbox" id="name6" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name7"
-                        ><input type="checkbox" id="name7" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name8"
-                        ><input type="checkbox" id="name8" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name9"
-                        ><input type="checkbox" id="name9" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <label for="name10"
-                        ><input type="checkbox" id="name10" name="dl-btn" />
-                        문성준</label
-                      >
-                    </th>
-                    <td>msj1</td>
-                    <td class="request-select">
-                      <a href="#modal1" rel="modal:open">메일 문의가 안되요.</a>
-                    </td>
-                    <td>010-1111-1111</td>
-                    <td>msj1@gmail.com</td>
-                    <td>
-                      <img
-                        class="delete pointer"
-                        src="../../assets/images/admin/delete.png"
-                        alt="삭제"
-                      />
-                    </td>
+                    <td><button class="secession">삭제</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -391,10 +201,10 @@
             </div>
             <div class="page-btn">
               <button class="img-btn">
-                <img src="../../assets/images/admin/prevPage-btn1.png" alt="prevPage" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/prevPage-btn1.png" alt="prevPage" />
               </button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/prev-btn.png" alt="prev" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/prev-btn.png" alt="prev" />
               </button>
               <button class="move-btn">1</button>
               <button class="move-btn">2</button>
@@ -407,10 +217,10 @@
               <button class="move-btn">9</button>
               <button class="move-btn">10</button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/next-btn.png" alt="next" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/next-btn.png" alt="next" />
               </button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/nextpage-btn.png" alt="nextPage" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/nextpage-btn.png" alt="nextPage" />
               </button>
             </div>
           </div>

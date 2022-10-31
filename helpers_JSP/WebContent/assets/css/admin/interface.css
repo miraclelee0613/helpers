@@ -241,3 +241,15 @@ div.content-body {
   display: flex;
   flex-direction: column;
 }
+
+button.secession {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #d0dbe7;
+  color: #036;
+}
+
+button.secession:hover {
+  border: 2px solid #036;
+}

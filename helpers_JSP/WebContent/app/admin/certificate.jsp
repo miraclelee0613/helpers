@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../../assets/images/admin/customer-service.png"
+      href="${pageContext.request.contextPath}/assets/images/admin/customer-service.png"
     />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/certificate.css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/interface.css" />
@@ -36,33 +36,35 @@
             <li class="pointer">
               <span>Helpers</span>
             </li>
-            <li class="pointer">
-              <span>사이트 바로가기</span>
-            </li>
+            <a href="${pageContext.request.contextPath}/index/index.in" style="color: #E0ECF8">
+              <li class="pointer">
+              	<span>사이트 바로가기</span>  
+           	  </li>
+            </a>
           </ul>
           <ul class="category">
-            <a href="adminPage-main.html">
+            <a href="${pageContext.request.contextPath}/admin/index.admin">
               <li class="pointer">
                 <span>관리자 홈</span>
               </li>
             </a>
-            <a href="adminPage-request.html">
-              <li class="pointer">
-                <span>도움 요청</span>
-              </li>
+            <a href="${pageContext.request.contextPath}/admin/post.admin">
+            <li class="pointer">
+              <span>도움 요청</span>
+            </li>
             </a>
-            <a href="adminPage-userlist.html">
+            <a href="${pageContext.request.contextPath}/admin/userlist.admin">
               <li class="pointer">
                 <span>회 원</span>
               </li>
             </a>
-            <a href="adminPage-certificate.html">
+            <a href="${pageContext.request.contextPath}/admin/certificate.admin">
               <li class="pointer select">
                 <span>증명서</span>
-                <img src="../../assets/images/admin/next.png" />
+				<img src="${pageContext.request.contextPath}/assets/images/admin/next.png" />
               </li>
             </a>
-            <a href="adminPage-mail.html">
+            <a href="${pageContext.request.contextPath}/admin/qna.admin">
               <li class="pointer">
                 <span>문 의</span>
               </li>
@@ -78,36 +80,36 @@
         <div class="content-header">
           <!-- 컨텐츠 주제 -->
           <div class="content-name">
-            <img src="../../assets/images/admin/certificate.png" />
+            <img src="${pageContext.request.contextPath}/assets/images/admin/certificate.png" />
             <h3>Helpers 증명서 발급</h3>
           </div>
           <!-- 오늘의 통계 -->
           <div class="today-box">
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 방문자<br />42</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 회원가입<br />31</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 도움 요청<br />28</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png" />
               <p>오늘의 문의<br />24</p>
-              <img src="../../assets/images/admin/close-bracket.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png" />
             </div>
           </div>
           <!-- 프로필 사진 로그아웃 -->
           <div class="content-header-profile">
             <div class="profile-box pointer">
-              <img src="../../assets/images/admin/bukbuk.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/bukbuk.png" />
               <span>벅벅코딩</span>
             </div>
             <button class="logout pointer">Logout</button>
@@ -128,8 +130,7 @@
                   <tr>
                     <th scope="cols" class="total-name">이 름</th>
                     <th scope="cols">아이디</th>
-                    <th scope="cols">강의 분야</th>
-                    <th scope="cols">주 제</th>
+                    <th scope="cols">제 목</th>
                     <th scope="cols">전화번호</th>
                     <th scope="cols">이메일</th>
                     <th scope="cols">완료 날짜</th>
@@ -141,107 +142,7 @@
                   <tr>
                     <th scope="row">한동석</th>
                     <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
-                    <td>010-1111-1111</td>
-                    <td>hds1@gmail.com</td>
-                    <td>2022/10/25</td>
-                    <td>2022/10/26</td>
-                    <td><button class="secession">삭제</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">한동석</th>
-                    <td>hds1</td>
-                    <td class="teacher-name">코딩</td>
-                    <td>자바</td>
+                    <td>자바가 너무 어려워요</td>
                     <td>010-1111-1111</td>
                     <td>hds1@gmail.com</td>
                     <td>2022/10/25</td>
@@ -254,10 +155,10 @@
             </div>
             <div class="page-btn">
               <button class="img-btn">
-                <img src="../../assets/images/admin/prevPage-btn1.png" alt="prevPage" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/prevPage-btn1.png" alt="prevPage" />
               </button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/prev-btn.png" alt="prev" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/prev-btn.png" alt="prev" />
               </button>
               <button class="move-btn">1</button>
               <button class="move-btn">2</button>
@@ -270,10 +171,10 @@
               <button class="move-btn">9</button>
               <button class="move-btn">10</button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/next-btn.png" alt="next" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/next-btn.png" alt="next" />
               </button>
               <button class="img-btn">
-                <img src="../../assets/images/admin/nextpage-btn.png" alt="nextPage" />
+                <img src="${pageContext.request.contextPath}/assets/images/admin/nextpage-btn.png" alt="nextPage" />
               </button>
             </div>
           </div>
@@ -283,5 +184,5 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="../js/adminPage-main.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/js/adminPage-main.js"></script>
 </html>
