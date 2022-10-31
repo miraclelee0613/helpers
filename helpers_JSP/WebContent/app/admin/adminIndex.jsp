@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../../assets/images/admin/customer-service.png"
+      href="${pageContext.request.contextPath}/assets/images/admin/customer-service.png"
     />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,33 +35,35 @@
             <li>
               <span>Helpers</span>
             </li>
-            <li class="pointer">
-              <span>사이트 바로가기</span>
-            </li>
+            <a href="${pageContext.request.contextPath}/index/index.in" style="color: #E0ECF8">
+              <li class="pointer">
+              	<span>사이트 바로가기</span>  
+           	  </li>
+            </a>
           </ul>
           <ul class="category">
-            <a href="adminPage-main.html">
+            <a href="${pageContext.request.contextPath}/admin/index.admin">
               <li class="pointer select">
                 <span>관리자 홈</span>
-              <img src="../../assets/images/admin/next.png" />
+              	<img src="${pageContext.request.contextPath}/assets/images/admin/next.png" />
               </li>
             </a>
-            <a href="adminPage-request.html">
+            <a href="${pageContext.request.contextPath}/admin/post.admin">
             <li class="pointer">
               <span>도움 요청</span>
             </li>
             </a>
-            <a href="adminPage-userlist.html">
+            <a href="${pageContext.request.contextPath}/admin/userlist.admin">
               <li class="pointer">
                 <span>회 원</span>
               </li>
             </a>
-            <a href="adminPage-certificate.html">
+            <a href="${pageContext.request.contextPath}/admin/certificate.admin">
               <li class="pointer">
                 <span>증명서</span>
               </li>
             </a>
-            <a href="adminPage-mail.html">
+            <a href="${pageContext.request.contextPath}/admin/qna.admin">
               <li class="pointer">
                 <span>문 의</span>
               </li>
@@ -77,36 +79,36 @@
         <div class="content-header">
           <!-- 컨텐츠 주제 -->
           <div class="content-name">
-            <img src="../../assets/images/admin/settings.png" />
+            <img src="${pageContext.request.contextPath}/assets/images/admin/settings.png" />
             <h3>Helpers 관리자 홈</h3>
           </div>
           <!-- 오늘의 통계 -->
           <div class="today-box">
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png">
               <p>오늘의 방문자<br/>42</p>
-              <img src="../../assets/images/admin/close-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png">
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png">
               <p>오늘의 회원가입<br/>31</p>
-              <img src="../../assets/images/admin/close-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png">
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png">
               <p>오늘의 도움 요청<br/>28</p>
-              <img src="../../assets/images/admin/close-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png">
             </div>
             <div class="today-count">
-              <img src="../../assets/images/admin/open-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/open-bracket.png">
               <p>오늘의 문의<br/>24</p>
-              <img src="../../assets/images/admin/close-bracket.png">
+              <img src="${pageContext.request.contextPath}/assets/images/admin/close-bracket.png">
             </div>
           </div>
           <!-- 프로필 사진 로그아웃 -->
           <div class="content-header-profile">
             <div class="profile-box pointer">
-              <img src="../../assets/images/admin/bukbuk.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/admin/bukbuk.png" />
               <span>벅벅코딩</span>
             </div>
             <button class="logout pointer">Logout</button>
@@ -130,7 +132,7 @@
               <div class="new-user" id="up-slide">
                 <div class="user-list1">
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>문성준</span>
                       <p>MSJ1@gmail.com / 2022-10-23 13:24</p>
@@ -138,7 +140,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>송치훈</span>
                       <p>SCH2@gmail.com / 2022-10-23 13:24</p>
@@ -146,7 +148,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>문승현</span>
                       <p>MSH3@gmail.com / 2022-10-23 13:24</p>
@@ -154,7 +156,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>김민지</span>
                       <p>KMJ4@gmail.com / 2022-10-23 13:24</p>
@@ -163,7 +165,7 @@
                   </div>
 
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>이준상</span>
                       <p>LJS5@gmail.com / 2022-10-23 13:24</p>
@@ -171,7 +173,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>노희찬</span>
                       <p>NHC6@gmail.com / 2022-10-23 13:24</p>
@@ -179,7 +181,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>이종호</span>
                       <p>LJH7@gmail.com / 2022-10-23 13:24</p>
@@ -187,7 +189,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>고진혁</span>
                       <p>KJH8@gmail.com / 2022-10-23 13:24</p>
@@ -196,7 +198,7 @@
                   </div>
 
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>이향준</span>
                       <p>LHJ9@gmail.com / 2022-10-23 13:24</p>
@@ -204,7 +206,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>강경민</span>
                       <p>KKM10@gmail.com / 2022-10-23 13:24</p>
@@ -212,7 +214,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>최수빈</span>
                       <p>CSB11@gmail.com / 2022-10-23 13:24</p>
@@ -220,7 +222,7 @@
                     <p class="pointer">보기</p>
                   </div>
                   <div class="user-list">
-                    <img src="../../assets/images/admin/user.png" />
+                    <img src="${pageContext.request.contextPath}/assets/images/admin/user.png" />
                     <div class="user-info">
                       <span>김종현</span>
                       <p>KJH12@gmail.com / 2022-10-23 13:24</p>
@@ -278,7 +280,7 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="../../assets/js/admin/adminPage-main.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/js/admin/adminPage-main.js"></script>
   <script>
     setInterval(function () {
       $("#up-slide > .user-list1").delay(2000);

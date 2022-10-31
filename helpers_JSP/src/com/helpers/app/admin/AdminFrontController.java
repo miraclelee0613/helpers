@@ -24,18 +24,29 @@ public class AdminFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-		if(target.equals("/admin/adminIndex.admin")) {
-//			adminIndex.jsp
+		if(target.equals("/admin/index.admin")) {
+//			adminIndex.jsp로 이동
+			result = new Result();
+			result.setPath("/app/admin/adminIndex.jsp");
 		}else if(target.equals("/admin/certificate.admin")) {
-//			certificate.jsp
+//			certificate.jsp로 이동
+			result = new Result();
+			result.setPath("/app/admin/certificate.jsp");
 		}else if(target.equals("/admin/post.admin")) {
-//			post.jsp
+//			post.jsp로 이동		
+			result = new Result();
+			result.setPath("/app/admin/post.jsp");
+
 		}else if(target.equals("/admin/qna.admin")) {
-//			qna.jsp
+//			qna.jsp로 이동
+			result = new Result();
+			result.setPath("/app/admin/qna.jsp");
 		}else if(target.equals("/admin/userlist.admin")) {
-//			userlist.jsp
-		}else if(target.equals("/admin/.admin")) {
-			
+//			userlist.jsp로 이동
+			result = new Result();
+			result.setPath("/app/admin/userList.jsp");
+		}else if(target.equals("/admin/deleteOk.admin")) {
+			result = new AdminDeleteOkController().execute(req, resp);
 		}
 		
 		if(result != null) {
@@ -44,9 +55,7 @@ public class AdminFrontController extends HttpServlet{
 			}else {
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
-			
 		}
-		
 	}
 }
 
