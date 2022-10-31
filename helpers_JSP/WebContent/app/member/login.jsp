@@ -23,7 +23,7 @@
     }
 </style>
 
-<body scroll="No">
+<body>
     <div class="container px-2">
         <!-- 컨테이너\헤더1 -->
 	<header class="header">
@@ -83,18 +83,18 @@
         <div class="container column is-one-third-desktop is-two-fifths-tablet is-three-fifths-mobile is-size-4">
 
             <div class="columns has-text-centered is-gapless is-mobile mt-6 mb-0">
-                <a class="column is-one-third-desktop"
+                <a class="column is-half-desktop"
                     style="height: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-top: 1px solid; border-left: 1px solid; border-bottom-left-radius: 0; border-right: 1px solid; border-bottom: 1px solid;">
                     <span class="is-inline-block mt-3 is-size-6 is-size-7-mobile">개인회원</span>
                 </a>
-                <a class="column is-one-third-desktop"
+                <a class="column is-half-desktop"
                     style="height: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-top: 1px solid; border-right: 1px solid; border-bottom: 1px solid;">
                     <span class="is-inline-block mt-3 is-size-6 is-size-7-mobile">기업회원</span>
                 </a>
-                <!-- <a class="column is-one-third-desktop"
+                <a class="column is-one-third-desktop is-hidden"
                     style="height: 50px; border-top: 1px solid; border-top-left-radius: 5px; border-top-right-radius: 5px; border-right: 1px solid; border-bottom: 1px solid;">
                     <span class="is-inline-block mt-3 is-size-6 is-size-7-mobile">비회원</span>
-                </a> -->
+                </a>
             </div>
             <form action="" class="container"
                 style="height: 300px; border-radius: 5px; border-left: 1px solid; border-top-left-radius: 0; border-bottom: 1px solid; border-right: 1px solid; border-top-right-radius: 0;">
@@ -125,8 +125,8 @@
             </form>
             <div class="contianer is-block">
                 <ul class="columns ml-6 p-0" style="align-content: center;">
-                    <li class="column is-inline-block is-size-7 is-one-third m-0 mt-3 "><a href="">비밀번호 찾기</a></li>
-                    <li class="column is-inline-block is-size-7 is-one-third m-0 mt-3 "><a href="">아이디 찾기</a></li>
+                    <li class="column is-inline-block is-size-7 is-one-third m-0 mt-3 is-hidden"><a href="">비밀번호 찾기</a></li>
+                    <li class="column is-inline-block is-size-7 is-one-third m-0 mt-3 is-hidden"><a href="">아이디 찾기</a></li>
                     <li class="column is-inline-block is-size-7 is-one-third m-0 mt-3 "><a href="">회원가입</a></li>
                 </ul>
             </div>

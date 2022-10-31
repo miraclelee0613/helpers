@@ -1,7 +1,6 @@
 package com.helpers.app.board;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,80 +8,82 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.helpers.app.Result;
 
-public class BoardFrontController extends HttpServlet{
+public class BoardFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doProcess(req, resp);
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doProcess(req, resp);
 	}
-	
+
 	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
-		
-		if(target.equals("/board/boardMain.bo")) {
-//			boardMain.jsp
-		}else if(target.equals("/board/boardPost.bo")) {
-//			boardPost.jsp
-		}else if(target.equals("/board/boardWriteGive.bo")) {
-//			boardWriteGive.jsp	
-		}else if(target.equals("/board/boardWriteReceive.bo")) {
-//			boardWriteReceive.jsp
-		}else if(target.equals("/board/boardClickAcceptOk.bo")) {
+
+		if (target.equals("/board/boardClickAcceptOk.bo")) {
 //			BoardClickAcceptOkController
-		}else if(target.equals("/board/boardLikeClickOk.bo")) {
+			result = new BoardClickAcceptOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardLikeClickOk.bo")) {
 //			BoardLikeClickOkController
-		}else if(target.equals("/board/boardPostOk.bo")) {
+			result = new BoardLikeClickOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardPostOk.bo")) {
 //			BoardPostOkController	
-		}else if(target.equals("/board/boardSearchPost.bo")) {
+			result = new BoardPostOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardSearchPost.bo")) {
 //			BoardSearchPostController
-		}else if(target.equals("/board/boardUploadImageOk.bo")) {
+			result = new BoardSearchPostController().execute(req, resp);
+
+		} else if (target.equals("/board/boardUploadImageOk.bo")) {
 //			BoardUploadImageOkController
+			result = new BoardUploadImageOkController().execute(req, resp);
+
+//======================== Give ==============================
+		} else if (target.equals("/board/boardGiveMain.bo")) {
+//			boardWriteGive.jsp	
+			result = new Result();
+			result.setPath("/app/board/boardGiveMain.jsp");
+
+		} else if (target.equals("/board/boardGivePost.bo")) {
+//			boardWriteGive.jsp	
+			result = new Result();
+			result.setPath("/app/board/boardGivePost.jsp");
+
+		} else if (target.equals("/board/boardGiveWrite.bo")) {
+//			boardWriteGive.jsp	
+			result = new Result();
+			result.setPath("/app/board/boardGiveWrite.jsp");
+
+//======================== Receive ===========================
+		} else if (target.equals("/board/boardReceiveMain.bo")) {
+//			boardWriteReceive.jsp
+			result = new Result();
+			result.setPath("/app/board/boardReceiveMain.jsp");
+			
+		} else if (target.equals("/board/boardReceivePost.bo")) {
+//			boardWriteReceive.jsp
+			result = new Result();
+			result.setPath("/app/board/boardReceivePost.jsp");
+			
+		} else if (target.equals("/board/boardReceiveWrite.bo")) {
+//			boardWriteReceive.jsp
+			result = new Result();
+			result.setPath("/app/board/boardReceiveWrite.jsp");
 		}
 		
-		
-		if(result != null) {
-			if(result.isRedirect()) {
+		if (result != null) {
+			if (result.isRedirect()) {
 				resp.sendRedirect(result.getPath());
-			}else {
+			} else {
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
-			
+
 		}
-		
+
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

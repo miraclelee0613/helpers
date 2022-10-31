@@ -247,7 +247,7 @@
 						style="background-color: #00a18d; border-color: #009481; line-height: 1.5;">
 						<a href="" style="color: #fff;">가입하기</a>
 					</button>
-					&nbsp&nbsp&nbsp;
+					&nbsp&nbsp&nbsp
 					<div class="control">
 						<button class="button is-link is-light">취소</button>
 					</div>
