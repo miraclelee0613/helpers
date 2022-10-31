@@ -24,11 +24,12 @@ public class BoardClickAcceptOkController {
 		boardVO.setBoardTitle(req.getParameter("boardTitle"));
 		boardVO.setBoardContent(req.getParameter("boardContent"));
 //		boardVO.setBoardDate(req.getParameter("boardDate"));
-		boardVO.setBoardReadCount(Integer.valueOf(req.getParameter("boardReadCount")));
-
+//		boardVO.setBoardReadCount(Integer.valueOf(req.getParameter("boardReadCount")));
+		boardVO.setBoardType(Integer.valueOf(req.getParameter("boardType")));
+		
 		boardDAO.post(boardVO);
 
-		result.setRedirect(true);
+		result.setRedirect(false);
 		result.setPath(req.getContextPath() + "/board/boardClickAcceptOk.bo");
 
 		return result;

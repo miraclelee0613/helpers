@@ -23,48 +23,59 @@ public class BoardFrontController extends HttpServlet {
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 
-		if (target.equals("/board/boardMain.bo")) {
-//			boardMain.jsp
+		if (target.equals("/board/boardClickAcceptOk.bo")) {
+//			BoardClickAcceptOkController
+			result = new BoardClickAcceptOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardLikeClickOk.bo")) {
+//			BoardLikeClickOkController
+			result = new BoardLikeClickOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardPostOk.bo")) {
+//			BoardPostOkController	
+			result = new BoardPostOkController().execute(req, resp);
+
+		} else if (target.equals("/board/boardSearchPost.bo")) {
+//			BoardSearchPostController
+			result = new BoardSearchPostController().execute(req, resp);
+
+		} else if (target.equals("/board/boardUploadImageOk.bo")) {
+//			BoardUploadImageOkController
+			result = new BoardUploadImageOkController().execute(req, resp);
+
+//======================== Give ==============================
+		} else if (target.equals("/board/boardGiveMain.bo")) {
+//			boardWriteGive.jsp	
 			result = new Result();
-			result.setPath("/app/board/boardMain.jsp");
-			
-		} else if (target.equals("/board/boardPost.bo")) {
-//			boardPost.jsp
+			result.setPath("/app/board/boardGiveMain.jsp");
+
+		} else if (target.equals("/board/boardGivePost.bo")) {
+//			boardWriteGive.jsp	
 			result = new Result();
-			result.setPath("/app/board/boardPost.jsp");
-			
-		} else if (target.equals("/board/boardWriteGive.bo")) {
+			result.setPath("/app/board/boardGivePost.jsp");
+
+		} else if (target.equals("/board/boardGiveWrite.bo")) {
 //			boardWriteGive.jsp	
 			result = new Result();
 			result.setPath("/app/board/boardGiveWrite.jsp");
+
+//======================== Receive ===========================
+		} else if (target.equals("/board/boardReceiveMain.bo")) {
+//			boardWriteReceive.jsp
+			result = new Result();
+			result.setPath("/app/board/boardReceiveMain.jsp");
 			
-		} else if (target.equals("/board/boardWriteReceive.bo")) {
+		} else if (target.equals("/board/boardReceivePost.bo")) {
+//			boardWriteReceive.jsp
+			result = new Result();
+			result.setPath("/app/board/boardReceivePost.jsp");
+			
+		} else if (target.equals("/board/boardReceiveWrite.bo")) {
 //			boardWriteReceive.jsp
 			result = new Result();
 			result.setPath("/app/board/boardReceiveWrite.jsp");
-			
-		} else if (target.equals("/board/boardClickAcceptOk.bo")) {
-//			BoardClickAcceptOkController
-			result= new BoardClickAcceptOkController().execute(req, resp);
-			
-		} else if (target.equals("/board/boardLikeClickOk.bo")) {
-//			BoardLikeClickOkController
-			result= new BoardLikeClickOkController().execute(req, resp);
-			
-		} else if (target.equals("/board/boardPostOk.bo")) {
-//			BoardPostOkController	
-			result= new BoardPostOkController().execute(req, resp);
-			
-		} else if (target.equals("/board/boardSearchPost.bo")) {
-//			BoardSearchPostController
-			result= new BoardSearchPostController().execute(req, resp);
-			
-		} else if (target.equals("/board/boardUploadImageOk.bo")) {
-//			BoardUploadImageOkController
-			result= new BoardUploadImageOkController().execute(req, resp);
-			
 		}
-
+		
 		if (result != null) {
 			if (result.isRedirect()) {
 				resp.sendRedirect(result.getPath());
