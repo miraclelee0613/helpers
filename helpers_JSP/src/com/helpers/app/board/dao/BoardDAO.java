@@ -25,6 +25,10 @@ public class BoardDAO {
 		
 		return sqlSession.selectOne("member.login", loginMap);
 	}
+
+	public Object select(int boardNumber) {
+		return null;
+	}
 	
 }
 
