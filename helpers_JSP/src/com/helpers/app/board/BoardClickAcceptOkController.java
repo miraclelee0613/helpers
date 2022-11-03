@@ -3,6 +3,7 @@ package com.helpers.app.board;
 import java.io.IOException;
 import java.rmi.ServerException;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -10,7 +11,7 @@ import com.helpers.app.Result;
 import com.helpers.app.board.dao.BoardDAO;
 import com.helpers.app.board.vo.BoardVO;
 
-public class BoardClickAcceptOkController {
+public class BoardClickAcceptOkController extends HttpServlet{
 //수락버튼 눌렀을 시 정보전달
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
 		req.setCharacterEncoding("UTF-8");
