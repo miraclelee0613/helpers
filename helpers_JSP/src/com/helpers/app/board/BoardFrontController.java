@@ -48,17 +48,19 @@ public class BoardFrontController extends HttpServlet {
 		 * BoardUpdateOkController().execute(req, resp);
 		 * 
 		 * } else
-		 */if (target.equals("/board/boardClickAcceptOk.bo")) {
-			// 수락버튼 눌렀을 시 정보전달
-//			BoardClickAcceptOkController
-			result = new BoardClickAcceptOkController().execute(req, resp);
-
-		} else if (target.equals("/board/boardLikeClickOk.bo")) {
-			// 좋아요 눌렀을시 정보 전달
-//			BoardLikeClickOkController
-			result = new BoardLikeClickOkController().execute(req, resp);
-
-		} else if (target.equals("/board/boardPostOk.bo")) {
+		 */
+//		if (target.equals("/board/boardClickAcceptOk.bo")) {
+//			// 수락버튼 눌렀을 시 정보전달
+////			BoardClickAcceptOkController
+//			result = new BoardClickAcceptOkController().execute(req, resp);
+//
+//		} else if (target.equals("/board/boardLikeClickOk.bo")) {
+//			// 좋아요 눌렀을시 정보 전달
+////			BoardLikeClickOkController
+//			result = new BoardLikeClickOkController().execute(req, resp);
+//
+//		} else
+		if (target.equals("/board/boardPostOk.bo")) {
 			// 글 등록 눌렀을 시 정보 전달
 //			BoardPostOkController	
 			result = new BoardPostOkController().execute(req, resp);
@@ -68,47 +70,68 @@ public class BoardFrontController extends HttpServlet {
 //			BoardSearchPostController
 			result = new BoardSearchPostController().execute(req, resp);
 
-		} else if (target.equals("/board/boardUploadImageOk.bo")) {
-//			BoardUploadImageOkController
-			result = new BoardUploadImageOkController().execute(req, resp);
+//		} else if (target.equals("/board/boardUploadImageOk.bo")) {
+////			BoardUploadImageOkController
+//			result = new BoardUploadImageOkController().execute(req, resp);
 
 //======================== Give ==============================
 		} else if (target.equals("/board/boardGiveMain.bo")) {
 //			도움주기 게시판 메인
 //			boardGiveMain.jsp
-			result = new Result();
-			result.setPath("/app/board/boardGiveMain.jsp");
+//			result = new Result();
+//			result.setPath("/app/board/boardGiveMain.jsp");
+			result = new BoardGiveMainController().execute(req, resp);
 
 		} else if (target.equals("/board/boardGivePost.bo")) {
 //			도움주기 게시판 글 상세보기
 //			boardGivePost.jsp
-			result = new Result();
-			result.setPath("/app/board/boardGivePost.jsp");
+//			result = new Result();
+//			result.setPath("/app/board/boardGivePost.jsp");
+			result = new BoardGivePostController().execute(req, resp);
 
 		} else if (target.equals("/board/boardGiveWrite.bo")) {
 //			도움주기 게시판 게시글 작성
 //			boardGiveWrite.jsp
-			result = new Result();
-			result.setPath("/app/board/boardGiveWrite.jsp");
-
+//			result = new Result();
+//			result.setPath("/app/board/boardGiveWrite.jsp");
+			result = new BoardGiveWriteController().execute(req, resp);
+			
+		} else if (target.equals("/board/boardGiveWriteOK.bo")) {
+//			도움받기 게시판 게시글 작성 완료
+//			boardReceiveWrite.jsp
+//			result = new Result();
+//			result.setPath("/app/board/boardReceiveWrite.jsp");
+			result = new BoardGiveWriteOkController().execute(req, resp);
+			
 //======================== Receive ===========================
 		} else if (target.equals("/board/boardReceiveMain.bo")) {
 //			도움받기 게시판 메인
 //			boardReceiveMain.jsp
-			result = new Result();
-			result.setPath("/app/board/boardReceiveMain.jsp");
+//			result = new Result();
+//			result.setPath("/app/board/boardReceiveMain.jsp");
+			result = new BoardReceiveMainController().execute(req, resp);
 
 		} else if (target.equals("/board/boardReceivePost.bo")) {
 //			도움받기 게시판 게시글 상세보기
 //			boardReceivePost.jsp
-			result = new Result();
-			result.setPath("/app/board/boardReceivePost.jsp");
+//			result = new Result();
+//			result.setPath("/app/board/boardReceivePost.jsp");
+			result = new BoardReceivePostController().execute(req, resp);
 
 		} else if (target.equals("/board/boardReceiveWrite.bo")) {
 //			도움받기 게시판 게시글 작성
 //			boardReceiveWrite.jsp
-			result = new Result();
-			result.setPath("/app/board/boardReceiveWrite.jsp");
+//			result = new Result();
+//			result.setPath("/app/board/boardReceiveWrite.jsp");
+			result = new BoardReceiveWriteController().execute(req, resp);
+			
+		} else if (target.equals("/board/boardReceiveWriteOK.bo")) {
+//			도움받기 게시판 게시글 작성 완료
+//			boardReceiveWrite.jsp
+//			result = new Result();
+//			result.setPath("/app/board/boardReceiveWrite.jsp");
+			result = new BoardReceiveWriteOkController().execute(req, resp);
+			
 		}
 
 		if (result != null) {
